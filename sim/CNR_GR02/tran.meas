@@ -1,0 +1,10 @@
+* Measure CNR_GR02
+.control
+
+load {cicname}.raw
+
+echo "MEAS_START"
+meas tran iref find i(vref) at=5n
+
+echo "MEAS_END"
+.endc

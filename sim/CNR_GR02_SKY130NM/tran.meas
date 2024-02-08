@@ -4,7 +4,8 @@
 load {cicname}.raw
 
 echo "MEAS_START"
-meas tran iref find v(VREF) at=5n
+let iref = i(VREF)
+meas tran iref find iref at=5n
 
 echo "MEAS_END"
 .endc
