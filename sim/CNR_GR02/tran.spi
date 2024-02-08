@@ -24,15 +24,13 @@
 * FORCE
 *-----------------------------------------------------------------
 VSS  VSS  0     dc 0
-VDD_1V8  VDD_1V8  VSS  dc {AVDD}
-VREF VREFP VREFN dc 0
+VDD  VDD_1V8  VSS  pwl 0 0 10n {AVDD}
 
 *-----------------------------------------------------------------
 * DUT
 *-----------------------------------------------------------------
 .include ../xdut.spi
 
-B1 temp 0 v=temper
 *----------------------------------------------------------------
 * MEASURES
 *----------------------------------------------------------------
@@ -45,7 +43,6 @@ B1 temp 0 v=temper
 #ifdef Debug
 .save all
 #else
-.save all
 .save ${VPORTS}
 #endif
 
@@ -64,8 +61,7 @@ optran 0 0 0 100p 2n 0
 tran 10p 1n 1p
 *quit
 #else
-dc temp -40 125 1
-*tran 10p 10n 1p
+tran 10p 10n 1p
 write
 quit
 #endif
