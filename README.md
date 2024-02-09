@@ -1,8 +1,8 @@
 
-# CNR_GR02_SKY130NM
+# RPLY_EX0_SKY130NM
 
 # Who
-wulff
+alireza
 
 # Why
  <explain why you made this module>
@@ -15,9 +15,9 @@ wulff
 
 | What            | Lib/Folder       | Cell/Name |
 | :-              | :-:              | :-:       |
-| Schematic       | CNR_GR02_SKY130NM | CNR_GR02 |
-| Layout          | CNR_GR02_SKY130NM | CNR_GR02 |
-| LPE             | CNR_GR02_SKY130NM | CNR_GR02 |
+| Schematic       | RPLY_EX0_SKY130NM | RPLY_EX0 |
+| Layout          | RPLY_EX0_SKY130NM | RPLY_EX0 |
+| LPE             | RPLY_EX0_SKY130NM | RPLY_EX0 |
 
 
 # Changelog/Plan
