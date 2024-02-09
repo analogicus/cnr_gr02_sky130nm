@@ -2,13 +2,16 @@
 # RPLY_EX0_SKY130NM
 
 # Who
-alireza
+Alireza Peymanfar	      | alirezp@stud.ntnu.no
+Bjørn K.T. Solheim	     | bksolhei@stud.ntnu.no
+Sheikha Al-Nasser	      | sheikhaa@stud.ntnu.no
+Youssef Mohamad Youssef |	youssemy@stud.ntnu.no
 
 # Why
- <explain why you made this module>
+TBD
 
 # How
- <explain short how you made this module>
+TBD
 
 
 # What
