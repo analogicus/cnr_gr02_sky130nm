@@ -20,9 +20,9 @@ TBD
 
 | What            | Lib/Folder       | Cell/Name |
 | :-              | :-:              | :-:       |
-| Schematic       | RPLY_EX0_SKY130NM | RPLY_EX0 |
-| Layout          | RPLY_EX0_SKY130NM | RPLY_EX0 |
-| LPE             | RPLY_EX0_SKY130NM | RPLY_EX0 |
+| Schematic       | CNR_GR02_SKY130NM | CNR_GR02 |
+| Layout          | CNR_GR02_SKY130NM | CNR_GR02 |
+| LPE             | CNR_GR02_SKY130NM | CNR_GR02 |
 
 
 # Changelog/Plan
