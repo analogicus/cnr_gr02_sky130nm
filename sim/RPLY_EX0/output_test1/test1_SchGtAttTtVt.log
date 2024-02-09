@@ -1,0 +1,22 @@
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Fri Jan 19 12:29:39 UTC 2024
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: cicsimgen test1
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value : -4.00000e+01
+No. of Data Rows : 17
+binary raw file "test1_SchGtAttTtVt.raw"
+ngspice-42 done
