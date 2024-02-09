@@ -1,0 +1,10 @@
+** sch_path: /home/alireza/lpro/temp_to_current/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/test1.sch
+.subckt test1 VDD VSS
+*.ipin VDD
+*.ipin VSS
+I0 VDD n1 10u
+I1 VDD n6 2u
+XQ1 VSS VSS n1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1
+XQ2 VSS VSS n6 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=5
+.ends
+.end
