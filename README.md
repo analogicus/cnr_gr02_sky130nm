@@ -2,9 +2,9 @@
 # CNR_GR02_SKY130NM
 
 # Who
-| Name                   | E-mail                |
+| Group members          | Emails                |
 | :-                     | :-:                   |
-| Alireza Peymanfar	     | alirezp@stud.ntnu.no  |
+|Alireza Peymanfar	     | alirezp@stud.ntnu.no  |
 |Bjørn K.T. Solheim      | bksolhei@stud.ntnu.no |
 |Sheikha Al-Nasser	     | sheikhaa@stud.ntnu.no |
 |Youssef Mohamad Youssef | youssemy@stud.ntnu.no |
