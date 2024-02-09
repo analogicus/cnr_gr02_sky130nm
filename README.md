@@ -2,10 +2,10 @@
 # RPLY_EX0_SKY130NM
 
 # Who
-Alireza Peymanfar	      | alirezp@stud.ntnu.no
-Bjørn K.T. Solheim	     | bksolhei@stud.ntnu.no
-Sheikha Al-Nasser	      | sheikhaa@stud.ntnu.no
-Youssef Mohamad Youssef |	youssemy@stud.ntnu.no
+Alireza Peymanfar	alirezp@stud.ntnu.no
+Bjørn K.T. Solheim  bksolhei@stud.ntnu.no
+Sheikha Al-Nasser	sheikhaa@stud.ntnu.no
+Youssef Mohamad Youssef youssemy@stud.ntnu.no
 
 # Why
 TBD
