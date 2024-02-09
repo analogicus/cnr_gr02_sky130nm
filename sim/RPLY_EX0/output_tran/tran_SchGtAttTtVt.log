@@ -1,0 +1,113 @@
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Fri Jan 19 12:29:39 UTC 2024
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: cicsimgen tran
+
+Warning: Model issue on line:
+  .model xdut.xr2:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr2:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+
+Checking parameters for BSIM 4.5 model xdut.xm6:sky130_fd_pr__nfet_01v8__model.50
+Warning: Pdibl1 = -0.554955 is negative.
+
+Checking parameters for BSIM 4.5 model xdut.xm5:sky130_fd_pr__nfet_01v8__model.50
+Warning: Pdibl1 = -0.554955 is negative.
+Note: Transient op started
+Note: Transient op finished successfully
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vss                                          0
+vdd                                        1.8
+xdut.vbjt2                             0.67704
+xdut.vbjt1                            0.724127
+xdut.net9                              1.33838
+xdut.vb1                              0.624059
+xdut.net8                               1.3384
+xdut.vro                               1.19069
+xdut.vbjt3                             0.74795
+xdut.net5                                  0.1
+xdut.net4                              1.33635
+xdut.net3                             0.826574
+xdut.net1                              1.72029
+xdut.vo                               0.894728
+xdut.vro0                             0.719858
+xdut.net2                             0.692725
+xdut.vb                               0.185337
+xdut.xr2.rb                           0.755125
+xdut.net10                            0.969321
+xdut.xr1.rb                           0.679975
+xdut.net11                            0.698449
+xdut.net6                             0.767931
+xdut.xr3.rb                           0.770234
+xdut.net12                            0.797253
+xdut.net7                              1.33804
+v.xdut.v1#branch                   5.44438e-06
+vdd#branch                        -5.17686e-05
+vss#branch                         5.17686e-05
+
+ Reference value :  1.28000e-09 Reference value :  1.80280e-07 Reference value :  3.41280e-07 Reference value :  5.20280e-07 Reference value :  6.99280e-07 Reference value :  8.79280e-07
+No. of Data Rows : 1000
+binary raw file "tran_SchGtAttTtVt.raw"
+ngspice-42 done
