@@ -1,6 +1,0 @@
-../../../tech/ngspice/supply.spi: 979119a85f3fabb437b7966ff0840ad719b7d206cd755226625b69abc60da697
-../../../tech/ngspice/temperature.spi: ae70f497d3f601cb938b76585b4635003d9221716e3ea52c012fe76e609a052b
-../../../work/xsch/RPLY_EX0.spice: 62f23869093dd485265533f57818bd8ee3e477d390220b02d0d3c230665746d0
-/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice: 5efa041a988893c1a3580d0ecd57870ea3146b27741c7d42b56baaa336b9549e
-tran_SchGtAttTtVt.meas: 6d06c11930248a6a13da37365df004683e6c8ebf8c48605abc8e7c58c13f117d
-tran_SchGtAttTtVt.spi: f7de9393628529257d227d43686048d7617ebfc4bd904ad851d0eac719036e0e
