@@ -3,15 +3,15 @@
 * Include
 *----------------------------------------------------------------
 #ifdef Lay
-.include ../../../work/lpe/CNR_GR02_SKY130NM_lpe.spi
+.include ../../../work/lpe/CNR_OTA_lpe.spi
 #else
-.include ../../../work/xsch/CNR_GR02_SKY130NM.spice
+.include ../../../work/xsch/CNR_OTA.spice
 #endif
 
 *-----------------------------------------------------------------
 * OPTIONS
 *-----------------------------------------------------------------
-.option TNOM=27 GMIN=1e-15
+.option TNOM=27 GMIN=1e-15 reltol=1e-5
 
 *-----------------------------------------------------------------
 * PARAMETERS
@@ -23,15 +23,27 @@
 *-----------------------------------------------------------------
 * FORCE
 *-----------------------------------------------------------------
-VSS VSS 0 dc 0
-VDD VDD 0 dc {AVDD}
+VSS  VSS  0     dc 0
+VDD  VDD_1V8  0  dc {AVDD}
+
 
 *-----------------------------------------------------------------
 * DUT
 *-----------------------------------------------------------------
 .include ../xdut.spi
-XDUT VDD VREF VSS CNR_GR02_SKY130NM
-+VREF
+
+.include ../load.spi
+
+
+.include ../../../../cpdk/ngspice/balun.spi
+xb1 VD LPO VOP VON balun
+xb2 VD LPI LOP LON balun
+
+
+.include ../../../../cpdk/ngspice/tian_subckt.lib
+X999 LPI LPO loopgainprobe
+
+
 *----------------------------------------------------------------
 * MEASURES
 *----------------------------------------------------------------
@@ -41,17 +53,18 @@ XDUT VDD VREF VSS CNR_GR02_SKY130NM
 * PROBE
 *----------------------------------------------------------------
 
-#ifdef Debug
-.save all
-#else
-.save v(VSS) 
-.save v(VDD)
-.save i(VDD)
-.save i(VREF)
-.save v(VREF)
-.save ${VPORTS}
-#endif
+.save v(xdut.vbn1) v(xdut.vbn2) v(xdut.vbn) v(xdut.vcn)
+.save v(xdut.vbp1) v(xdut.vbp2) v(xdut.vbp) v(xdut.vcp)
+.save v(xdut.vconp) v(xdut.vconn) v(xdut.vcopn) v(xdut.vcopp)
+.save v(xdut.vs)
+.save v(xdut.vcbp)
+.save v(xdut.vco) v(xdut.vcref)
+.save v(xdut.vcs)
+.save v(von) v(vop) v(vin) v(vip) v(ibpsr_5u) v(vdd_1v8) v(vss) v(vsin) v(vsip)
 
+.save V(X999.x) I(v.X999.Vi)
+.save v(LPO) v(LPI) v(LOP) V(LON)
+.save v(AVDD)
 *----------------------------------------------------------------
 * NGSPICE control
 *----------------------------------------------------------------
@@ -61,16 +74,28 @@ set color0=white
 set color1=black
 unset askquit
 
-optran 0 0 0 100p 2n 0
+optran 0 0 0 100n 4u 0
+op
 
-#ifdef Debug
-tran 10p 1n 1p
-*quit
-#else
-tran 10p 10n 1p
+
+*----------------------------------------------------------------
+* LSTB analysis
+*----------------------------------------------------------------
+* Set voltage AC to 1
+ac dec 50 1 0.1G
+
+* Set Current to 1
+alter i.X999.Ii acmag=1
+alter v.X999.Vi acmag=0
+ac dec 50 1 0.1G
+
+let lg_mag = db(tian_loop())
+let lg_phase = 180*cph(tian_loop())/pi
+
+
 write
+
 quit
-#endif
 
 .endc
 
