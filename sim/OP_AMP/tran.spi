@@ -3,9 +3,9 @@
 * Include
 *----------------------------------------------------------------
 #ifdef Lay
-.include ../../../work/lpe/OP_AMP_TESTER_lpe.spi
+.include ../../../work/lpe/OP_AMP_lpe.spi
 #else
-.include ../../../work/xsch/OP_AMP_TESTER.spice
+.include ../../../work/xsch/OP_AMP.spice
 #endif
 
 *-----------------------------------------------------------------

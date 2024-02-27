@@ -10,11 +10,11 @@
 # -----------------------------------------------------------
 
 #PREFIX=
-LIB=OP_AMP_TESTER_SKY130NM
-CELL=OP_AMP_TESTER
+LIB=OP_AMP_SKY130NM
+CELL=OP_AMP
 
 #- Provide cells you want to check for the lvsall drcall commands
-CELLS=OP_AMP_TESTER
+CELLS=OP_AMP
 
 
 include ../tech/make/core.make

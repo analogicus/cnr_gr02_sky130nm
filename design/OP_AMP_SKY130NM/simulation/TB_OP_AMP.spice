@@ -1,19 +1,12 @@
-** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/OP_AMP_TESTER_SKY130NM/OP_AMP_TESTER.sch
-**.subckt OP_AMP_TESTER VSS VDD_1V8 VIN VIP
-*.ipin VSS
-*.ipin VDD_1V8
-*.ipin VIN
-*.ipin VIP
-x1 net2 net3 VSS VSS CNRATR_NCH_4C2F0
-x2 net3 net3 VSS VSS CNRATR_NCH_4C2F0
-x3 net2 VIN net1 net1 CNRATR_PCH_4C4F0
-x4 net3 VIP net1 net1 CNRATR_PCH_4C4F0
-x5 net1 net5 VDD_1V8 VDD_1V8 CNRATR_PCH_4C4F0
-x6 net4 net5 VDD_1V8 net7 CNRATR_PCH_4C4F0
-x7 net4 net3 VSS net8 CNRATR_NCH_4C2F0
-x8 net6 net5 VDD_1V8 VDD_1V8 CNRATR_PCH_4C4F0
-R1 net6 VSS 1k m=1
-V1 net4 VSS 0
+** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/OP_AMP_SKY130NM/TB_OP_AMP.sch
+**.subckt TB_OP_AMP
+V2 net1 GND {vdda*(20/(16+16+4))}
+R1 VIN net1 100k m=1
+R2 VIP net1 100k m=1
+C1 VO GND 4p m=1
+R3 VO VIN 500k m=1
+V1 net2 GND {vdda}
+x1 net2 VO VIN VIP GND OP_AMP
 **** begin user architecture code
 
 
@@ -25,6 +18,27 @@ V1 net4 VSS 0
 
 **** end user architecture code
 **.ends
+
+* expanding   symbol:  OP_AMP_SKY130NM/OP_AMP.sym # of pins=5
+** sym_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/OP_AMP_SKY130NM/OP_AMP.sym
+** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/OP_AMP_SKY130NM/OP_AMP.sch
+.subckt OP_AMP VDD_1V8 VO VIN VIP VSS
+*.ipin VSS
+*.ipin VDD_1V8
+*.ipin VIN
+*.ipin VIP
+*.opin VO
+x1 P5 P2 VSS VSS CNRATR_NCH_4C2F0
+x2 P2 P2 VSS VSS CNRATR_NCH_4C2F0
+x3 P5 VIN V_TAIL V_TAIL CNRATR_PCH_4C4F0
+x4 P2 VIP V_TAIL V_TAIL CNRATR_PCH_4C4F0
+x5 V_TAIL P3 VDD_1V8 VDD_1V8 CNRATR_PCH_4C4F0
+x6 VO P3 VDD_1V8 net1 CNRATR_PCH_4C4F0
+x7 VO P2 VSS net2 CNRATR_NCH_4C2F0
+x8 P4 P3 VDD_1V8 VDD_1V8 CNRATR_PCH_4C4F0
+R1 P4 VSS 1k m=1
+.ends
+
 
 * expanding   symbol:  CNR_ATR_SKY130NM/CNRATR_NCH_4C2F0.sym # of pins=4
 ** sym_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_NCH_4C2F0.sym
@@ -53,4 +67,5 @@ XM1 D G S B sky130_fd_pr__pfet_01v8 L=1.26 W=3.84 nf=2 ad='int((nf+1)/2) * W/nf 
 + sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
+.GLOBAL GND
 .end

@@ -7,8 +7,8 @@ include ../../tech/make/sim.make
 TB=tran
 VIEW=Sch
 #VIEW=Lay
-CELL=OP_AMP_TESTER
-LIB =OP_AMP_TESTER_SKY130NM
+CELL=OP_AMP
+LIB =OP_AMP_SKY130NM
 OPT=
 
 

@@ -1,4 +1,4 @@
-* Measure OP_AMP_TESTER
+* Measure OP_AMP
 .control
 
 load {cicname}.raw

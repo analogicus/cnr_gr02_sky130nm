@@ -1,4 +1,4 @@
-.incude "/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice"
+.include "/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice"
 .include "/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__mismatch.corner.spice"
 .include "/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.corner.spice"
 .include "/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__mismatch.corner.spice"
