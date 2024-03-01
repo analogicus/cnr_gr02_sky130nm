@@ -26,14 +26,15 @@
 *-----------------------------------------------------------------
 VSS  VSS  0     dc 0
 VDD  VDD  VSS  dc 1.8
-VREF VREFP VREFN dc 0
+VIN+ VIN+ VSS dc 0.5
+VIN- VIN- VSS dc 0.5
 
 *-----------------------------------------------------------------
 * DUT
 *-----------------------------------------------------------------
-XDUT VDD VSS VREFP VREFN CNR_GR02
+.include ../xdut.spi
 
-B5 temp 0 v=temper
+*B5 temp 0 v=temper
 *----------------------------------------------------------------
 * MEASURES
 *----------------------------------------------------------------
@@ -65,8 +66,8 @@ optran 0 0 0 100p 2n 0
 tran 10p 1n 1p
 *quit
 #else
-dc temp -40 125 1
-*tran 10p 10n 1p
+*dc temp -40 125 1
+tran 10p 1n 1p
 write
 quit
 #endif
