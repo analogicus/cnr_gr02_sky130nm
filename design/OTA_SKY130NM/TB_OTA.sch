@@ -71,14 +71,14 @@ value="
 * ngspice commands
 .include corner.spi
 "}
-C {devices/vsource.sym} 980 880 0 0 {name=V2 value=0.85}
+C {devices/vsource.sym} 980 880 0 0 {name=V2 value=0.9}
 C {devices/capa.sym} 1540 880 0 0 {name=C1
 m=1
-value=1n
+value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/vsource.sym} 880 880 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 1110 990 0 0 {name=l1 lab=GND}
-C {OP_AMP_SKY130NM/OP_AMP.sym} 1320 720 0 0 {name=x1}
+C {OTA_SKY130NM/OTA.sym} 1320 720 0 0 {name=x1}
 C {devices/lab_wire.sym} 1150 690 0 0 {name=p1 sig_type=std_logic lab=VIN}
 C {devices/lab_wire.sym} 1150 750 0 0 {name=p2 sig_type=std_logic lab=VIP}
