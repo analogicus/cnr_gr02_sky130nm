@@ -26,7 +26,7 @@
 VSS  VSS  0     dc 0
 VDD  VDD_1V8  0  dc {AVDD}
 VIP  VIP 0 dc {AVDD/2}
-VIN  VO 0 dc  
+VIN  VO VIN dc 0 
 
 
 *-----------------------------------------------------------------
@@ -75,8 +75,8 @@ alter i.X999.Ii acmag=1
 alter v.X999.Vi acmag=0
 ac dec 50 1 0.1G
 
-*let lg_mag = db(tian_loop())
-*let lg_phase = 180*cph(tian_loop())/pi
+let lg_mag = db(tian_loop())
+let lg_phase = 180*cph(tian_loop())/pi
 
 write
 

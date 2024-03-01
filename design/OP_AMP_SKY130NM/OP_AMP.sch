@@ -87,6 +87,8 @@ N 1170 660 1250 660 {
 lab=P3}
 N 1390 830 1770 830 {
 lab=P5}
+N 1770 720 1810 720 {}
+N 1770 780 1770 830 {}
 C {cborder/border_s.sym} 1850 1190 0 0 {}
 C {devices/ipin.sym} 1060 980 0 0 {name=p3 lab=VSS}
 C {devices/ipin.sym} 1050 480 0 0 {name=p1 lab=VDD_1V8}
@@ -95,13 +97,13 @@ C {devices/ipin.sym} 1680 770 0 1 {name=p6 lab=VIN}
 C {CNR_ATR_SKY130NM/CNRATR_NCH_2C12F0.sym} 1430 910 0 1 {name=x1 }
 C {CNR_ATR_SKY130NM/CNRATR_NCH_2C1F2.sym} 1570 910 0 0 {name=x2 }
 C {CNR_ATR_SKY130NM/CNRATR_PCH_4C4F0.sym} 1350 770 0 0 {name=x3 }
-C {CNR_ATR_SKY130NM/CNRATR_PCH_2C12F0.sym} 1650 770 0 1 {name=x4 }
+C {CNR_ATR_SKY130NM/CNRATR_PCH_4C4F0.sym} 1650 770 0 1 {name=x4 }
 C {CNR_ATR_SKY130NM/CNRATR_PCH_4C4F0.sym} 1460 600 0 0 {name=x5 }
 C {CNR_ATR_SKY130NM/CNRATR_PCH_4C4F0.sym} 1770 600 0 0 {name=x6 }
 C {CNR_ATR_SKY130NM/CNRATR_NCH_4C2F0.sym} 1770 830 0 0 {name=x7 }
 C {CNR_ATR_SKY130NM/CNRATR_PCH_4C4F0.sym} 1210 600 0 1 {name=x8 }
 C {devices/res.sym} 1170 830 0 0 {name=R1
-value=100k
+value=1k
 footprint=1206
 device=resistor
 m=1}
@@ -118,3 +120,8 @@ W=1
 L=1
 model=res_generic_m1
 mult=1}
+C {devices/capa.sym} 1770 750 0 0 {name=C1
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
