@@ -1,0 +1,113 @@
+** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/OP_AMP_SKY130NM/TB_OP_AMP.sch
+**.subckt TB_OP_AMP
+V2 VIP GND 0.85
+C1 VIN GND 1n m=1
+V1 net1 GND 1.8
+x1 net1 net2 net2 VIN VIN VIP GND OP_AMP
+**** begin user architecture code
+
+
+
+* ngspice commands
+.include corner.spi
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  OP_AMP_SKY130NM/OP_AMP.sym # of pins=7
+** sym_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/OP_AMP_SKY130NM/OP_AMP.sym
+** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/OP_AMP_SKY130NM/OP_AMP.sch
+.subckt OP_AMP VDD_1V8 LPO LPI VO VIN VIP VSS
+*.ipin VSS
+*.ipin VDD_1V8
+*.ipin VIP
+*.ipin VIN
+*.opin VO
+*.opin LPO
+*.ipin LPI
+x1 P5 P2 VSS VSS CNRATR_NCH_2C12F0
+x2 P2 P2 VSS VSS CNRATR_NCH_2C1F2
+x3 P5 VIP V_TAIL V_TAIL CNRATR_PCH_4C4F0
+x4 P2 VIN V_TAIL V_TAIL CNRATR_PCH_2C12F0
+x5 V_TAIL P3 VDD_1V8 VDD_1V8 CNRATR_PCH_4C4F0
+x6 LPO P3 VDD_1V8 net1 CNRATR_PCH_4C4F0
+x7 LPO P5 VSS net2 CNRATR_NCH_4C2F0
+x8 P3 P3 VDD_1V8 VDD_1V8 CNRATR_PCH_4C4F0
+R1 P3 VSS 100k m=1
+R2 LPI VO sky130_fd_pr__res_generic_m1 W=1 L=1 m=1
+.ends
+
+
+* expanding   symbol:  CNR_ATR_SKY130NM/CNRATR_NCH_2C12F0.sym # of pins=4
+** sym_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_NCH_2C12F0.sym
+** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_NCH_2C12F0.sch
+.subckt CNRATR_NCH_2C12F0 D G S B
+*.iopin D
+*.iopin G
+*.iopin S
+*.iopin B
+XM1 D G S B sky130_fd_pr__nfet_01v8 L=4.14 W=1.92 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  CNR_ATR_SKY130NM/CNRATR_NCH_2C1F2.sym # of pins=4
+** sym_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_NCH_2C1F2.sym
+** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_NCH_2C1F2.sch
+.subckt CNRATR_NCH_2C1F2 D G S B
+*.iopin D
+*.iopin G
+*.iopin S
+*.iopin B
+XM1 D G S B sky130_fd_pr__nfet_01v8 L=0.252 W=1.92 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  CNR_ATR_SKY130NM/CNRATR_PCH_4C4F0.sym # of pins=4
+** sym_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_PCH_4C4F0.sym
+** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_PCH_4C4F0.sch
+.subckt CNRATR_PCH_4C4F0 D G S B
+*.iopin D
+*.iopin G
+*.iopin S
+*.iopin B
+XM1 D G S B sky130_fd_pr__pfet_01v8 L=1.26 W=3.84 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  CNR_ATR_SKY130NM/CNRATR_PCH_2C12F0.sym # of pins=4
+** sym_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_PCH_2C12F0.sym
+** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_PCH_2C12F0.sch
+.subckt CNRATR_PCH_2C12F0 D G S B
+*.iopin D
+*.iopin G
+*.iopin S
+*.iopin B
+XM1 D G S B sky130_fd_pr__pfet_01v8 L=4.14 W=1.92 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  CNR_ATR_SKY130NM/CNRATR_NCH_4C2F0.sym # of pins=4
+** sym_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_NCH_4C2F0.sym
+** sch_path: /home/solheim22/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM/CNRATR_NCH_4C2F0.sch
+.subckt CNRATR_NCH_4C2F0 D G S B
+*.iopin D
+*.iopin G
+*.iopin S
+*.iopin B
+XM1 D G S B sky130_fd_pr__nfet_01v8 L=0.54 W=3.84 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end
