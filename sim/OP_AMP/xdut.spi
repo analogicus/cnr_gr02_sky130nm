@@ -1,2 +1,2 @@
 *Automatic generated instance fron ../../tech/scripts/genxdut OP_AMP
-XDUT VSS VDD_1V8 VIN VIP  OP_AMP
+XDUT VSS VDD_1V8 VIP VIN VO LPO LPI  OP_AMP
