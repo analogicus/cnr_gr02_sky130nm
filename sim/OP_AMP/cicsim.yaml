@@ -1,6 +1,0 @@
-corner:
-  Lay: ''
-  Sch: ''
-ngspice:
-  library: OP_AMP_TESTER_SKY130NM
-  cell: OP_AMP_TESTER

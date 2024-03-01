@@ -38,7 +38,7 @@ VDD  VDD  0  dc 1.8
 *-----------------------------------------------------------------
 * DUT
 *-----------------------------------------------------------------
-XDUT VDD VSS CNR_GR02
+XDUT VDD VSS 0 RPLY_EX0
 
 *----------------------------------------------------------------
 * MEASURES
@@ -52,8 +52,7 @@ XDUT VDD VSS CNR_GR02
 #ifdef Debug
 .save all
 #else
-.save all
-*.save v(VDD) v(VSS) v(xdut.VO) v(xdut.VBJT1) v(xdut.VBJT2) v(xdut.VBJT3) v(xdut.VRO) v(xdut.VRO0) i(vdd) v(xdut.Vb) v(xdut.Vb1)
+.save v(VDD) v(VSS) v(xdut.VO) v(xdut.VBJT1) v(xdut.VBJT2) v(xdut.VBJT3) v(xdut.VRO) v(xdut.VRO0) i(vdd) v(xdut.Vb) v(xdut.Vb1) v(xdut.Vn1) v(xdut.Vn2) v(xdut.Vn3) v(xdut.Vn4)
 
 #endif
 
@@ -66,15 +65,10 @@ set color0=white
 set color1=black
 unset askquit
 
-optran 0 0 0 100n 20u 0
 
-tran 1n 1u 1n
-
-ifdef DEBUG
-tran 10p 1n 1p
-*quit
-#else
 dc TEMP -40 125 10
+
+
 write
 quit
 #endif
