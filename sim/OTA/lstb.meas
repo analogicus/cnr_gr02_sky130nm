@@ -7,7 +7,7 @@ echo "MEAS_START"
 
 load {cicname}_op.raw
 
-let idd = -i(vdd)
+let idd = -i(vdd_1v8)
 print i(vss)
 print idd
 

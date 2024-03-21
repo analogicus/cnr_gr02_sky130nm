@@ -24,19 +24,21 @@
 * FORCE
 *-----------------------------------------------------------------
 VSS  VSS  0     dc 0
-VDD  VDD_1V8  0  dc {AVDD}
-VIP  VIP 0 dc {AVDD/2}
-VIN  VO VIN dc 0 
+VDD_1V8  VDD_1V8  0  dc {AVDD}
+VIP  VIP 0 dc 1.2
+*VIN  VO VIN dc 0 
 
-
+*vlp1 LPI LPO dc 0
 *-----------------------------------------------------------------
 * DUT
 *-----------------------------------------------------------------
 .include ../xdut.spi
 *.include ../load.spi
 
+
+
 .include ../../../../cpdk/ngspice/tian_subckt.lib
-X999 LPI LPO loopgainprobe
+X999 LPO LPI loopgainprobe
 
 *----------------------------------------------------------------
 * MEASURES
@@ -48,9 +50,9 @@ X999 LPI LPO loopgainprobe
 
 .save V(X999.x) I(v.X999.Vi)
 .save v(LPO) v(LPI)
-.save v(AVDD)
+*.save v(AVDD)
 .save i(VSS)
-.save i(VDD)
+.save i(VDD_1V8)
 *----------------------------------------------------------------
 * NGSPICE control
 *----------------------------------------------------------------
@@ -60,7 +62,7 @@ set color0=white
 set color1=black
 unset askquit
 
-optran 0 0 0 10n 1u 0
+optran 0 0 0 10n 10u 0
 op
 write {cicname}_op.raw
 

@@ -71,7 +71,7 @@ value="
 * ngspice commands
 .include corner.spi
 "}
-C {devices/vsource.sym} 980 880 0 0 {name=V2 value=0.9}
+C {devices/vsource.sym} 980 880 0 0 {name=V2 value=1.2}
 C {devices/capa.sym} 1540 880 0 0 {name=C1
 m=1
 value=1p
