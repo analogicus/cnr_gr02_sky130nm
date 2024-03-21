@@ -1,0 +1,14 @@
+* Measure CNR_GR02
+.control
+
+load {cicname}.raw
+
+echo "MEAS_START"
+
+
+*meas tran vout find VO at=10n
+
+
+
+echo "MEAS_END"
+.endc
