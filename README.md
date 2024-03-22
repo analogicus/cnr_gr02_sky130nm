@@ -2,13 +2,18 @@
 # CNR_GR02_SKY130NM
 
 # Who
-HI
+| Name                        | E-mail                |
+| :-                          | :-:                   |
+| Alireza Peymanfar           | alirezp@stud.ntnu.no  |
+| Sheikha Al-Nasser           | sheikhaa@stud.ntnu.no |
+| Bjørn K.T. Solheim          | bksolhei@stud.ntnu.no | 
+| Youssef Mohamad Youssef     | youssemy@stud.ntnu.no |
 
 # Why
- <explain why you made this module>
+  
 
 # How
- <explain short how you made this module>
+ 
 
 
 # What
@@ -23,7 +28,7 @@ HI
 # Changelog/Plan
 | Version | Status | Comment|
 | :-| :-| :-|
-|0.1.0 | :x: | Make something |
+|0.5.0 | :v: | Convertion from temperature to current, current to time and time to digtial works |
 
 
 # Signal interface
@@ -42,13 +47,14 @@ HI
 | Temperature         | -40     | 27            | 125     | C     |
 
 
+
 # Status
 
 | Stage                       | TYPE | Status | Comment                        |
 | :---                        | :-:  | :---:  | :--:                           |
-| Specification               | DOC  | :x:    |                                |
-| Schematic                   | VIEW | :x:    |                                |
-| Schematic simulation        | VER  | N/A    |                                |
+| Specification               | DOC  | :v:    |                                |
+| Schematic                   | VIEW | :v:    |                                |
+| Schematic simulation        | VER  | :v:    |                                |
 | Layout                      | VIEW | :x:    |                                |
 | Layout parasitic extraction | VIEW | :x:    |                                |
 | LPE simulation              | VER  | :x:    |                                |
