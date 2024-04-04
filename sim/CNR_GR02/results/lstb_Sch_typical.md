@@ -7,7 +7,7 @@ For details see <a href='lstb_Sch_typical.html'>lstb_Sch_typical.html</a>
 |Current|idd | Spec | -80.000 uA | 100.000 uA | 120.000 uA |
 | | | ('Sch',)|60.443 uA | 60.443 uA | 60.443 uA |
 |Bandwidth|f3db | Spec | 0.100 kHz | 3.000 kHz | 15.000 kHz |
-| | | ('Sch',)|1091.785 kHz | 1091.785 kHz | 1091.785 kHz |
+| | | ('Sch',)|1091.787 kHz | 1091.787 kHz | 1091.787 kHz |
 |Gain Margin|gm\_db | Spec | -50.00 dB | -10.00 dB | -10.00 dB |
 | | | ('Sch',)|-25.28 dB | -25.28 dB | -25.28 dB |
 |DC gain|lf\_gain | Spec | 60.00 dB | 75.00 dB | 80.00 dB |
