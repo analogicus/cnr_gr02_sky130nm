@@ -1,0 +1,14 @@
+Warning: Optran step size potentially too large.
+Error: Could not find include file ../../../work/xsch/OP_AMP.spice
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Jan 14 17:52:39 UTC 2024
+******
+[?2004hngspice 23 -> eixt[K[K[Kxit
+[?2004lngspice-42 done

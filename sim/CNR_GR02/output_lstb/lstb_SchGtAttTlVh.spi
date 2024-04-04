@@ -1,0 +1,89 @@
+cicsimgen lstb
+*Nothing here
+
+.lib  "/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice" tt
+
+.lib "../../../tech/ngspice/temperature.spi" Tl
+
+.lib "../../../tech/ngspice/supply.spi" Vh
+
+*TB_SUN_TR_SKY130NM/TB_NCM
+*----------------------------------------------------------------
+* Include
+*----------------------------------------------------------------
+.include ../../../work/xsch/CNR_GR02.spice
+
+*-----------------------------------------------------------------
+* OPTIONS
+*-----------------------------------------------------------------
+.option TNOM=27 GMIN=1e-15 reltol=1e-6
+
+*-----------------------------------------------------------------
+* PARAMETERS
+*-----------------------------------------------------------------
+.param TRF = 10p
+
+.param AVDD = {vdda}
+
+*-----------------------------------------------------------------
+* FORCE
+*-----------------------------------------------------------------
+VSS  VSS  0     dc 0
+VDD_1V8  VDD_1V8  0  dc {AVDD} 
+vrst rst 0 dc 0
+*-----------------------------------------------------------------
+* DUT
+*-----------------------------------------------------------------
+XDUT VDD_1V8 VSS rst LPO LPI VO CNR_GR02
+
+.include ../../../../cpdk/ngspice/tian_subckt.lib
+X999 LPO LPI loopgainprobe
+
+*----------------------------------------------------------------
+* MEASURES
+*----------------------------------------------------------------
+
+*----------------------------------------------------------------
+* PROBE
+*----------------------------------------------------------------
+
+.save V(X999.x) I(v.X999.Vi)
+.save v(LPO) v(LPI)
+*.save v(AVDD)
+.save i(VSS)
+.save i(VDD_1V8)
+*----------------------------------------------------------------
+* NGSPICE control
+*----------------------------------------------------------------
+.control
+set num_threads=8
+set color0=white
+set color1=black
+unset askquit
+
+optran 0 0 0 10n 10u 0
+op
+write lstb_SchGtAttTlVh_op.raw
+
+*----------------------------------------------------------------
+* LSTB analysis
+*----------------------------------------------------------------
+* Set voltage AC to 1
+ac dec 50 1 0.1G
+
+* Set Current to 1
+alter i.X999.Ii acmag=1
+alter v.X999.Vi acmag=0
+ac dec 50 1 0.1G
+
+let lg_mag = db(tian_loop())
+let lg_phase = 180*cph(tian_loop())/pi
+
+write
+
+quit
+
+.endc
+
+.end
+

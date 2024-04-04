@@ -1,0 +1,17 @@
+../../../../cpdk/ngspice/tian_subckt.lib: d4f3b50615b170c65020dc17366320a130ce56ea2142777bf37d0d582e77975e
+../../../tech/ngspice/supply.spi: 979119a85f3fabb437b7966ff0840ad719b7d206cd755226625b69abc60da697
+../../../tech/ngspice/temperature.spi: ae70f497d3f601cb938b76585b4635003d9221716e3ea52c012fe76e609a052b
+../../../work/xsch/OTA.spice: 3f5f6786495e7f0e46d60e8a1875d39b1d9915512e1a780dd44577dd3a347986
+../load.spi: 58607b55ec7cecd145d91c7fe0aa236acc6631e22eebcaa87095313ecbe0d76d
+../xdut.spi: 1c82c2fbd696a4d40b1922a1ff35e0a37df22ed69dd8427e3c5d478b654186fc
+/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__mismatch.corner.spice: 24a3b29d7d7f26f99098811c31eb5497950a3aed520ab83768a96f35467fe818
+/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice: 7f99085edc5ca0215d49585a75889b5fdb2b8c23b220eb0325124a3ca6915122
+/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__mismatch.corner.spice: f4d560668712678ea60641de923fce7691e64acda951949f840986837c31741a
+/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.corner.spice: 641d251a08bf9ddcfc67ba4bd4698ae1978d09447eb6ebf90055fdf3d21917ab
+/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/all.spice: ada86dba53017af314dfa04dac253c8424e0941158cf476a7ca191c55aea3bbb
+/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/corners/tt/nonfet.spice: 9e442b3828f29c8cf0a4d030c37b913fae11a23b00b58a4622d8bdf6909b56dd
+/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/corners/tt/specialized_cells.spice: 658f71e2e534f48984ca055aa3c73982dedc3e52abdaf16b324576dc0fdb62ac
+/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical.spice: 7c29723076a22fe5b080d245adb97451de5ad0812f0344f6bfe31c9697b71f0d
+/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice: 4deedaa4be27f2e1f083567a945cbaed02027e018fcd09431e57a02c08a117b1
+lstb_SchGtKttTtVt.meas: 3728a884e3df978bf8052913911ad8b5ec60006d29f37b8364dcbc82f68de9d9
+lstb_SchGtKttTtVt.spi: 6b23df1b2c4cbb5b3864f0f1521e23f6572c99c5533aa125ed666a9a03650e39

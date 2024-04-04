@@ -1,0 +1,7 @@
+../../../../cpdk/ngspice/tian_subckt.lib: d4f3b50615b170c65020dc17366320a130ce56ea2142777bf37d0d582e77975e
+../../../tech/ngspice/supply.spi: 979119a85f3fabb437b7966ff0840ad719b7d206cd755226625b69abc60da697
+../../../tech/ngspice/temperature.spi: ae70f497d3f601cb938b76585b4635003d9221716e3ea52c012fe76e609a052b
+../../../work/xsch/CNR_GR02.spice: 9d2e558ab05c52303d332689cd4f5831cb1b0acc909f21f4fbeca86d28ea2557
+/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice: 5efa041a988893c1a3580d0ecd57870ea3146b27741c7d42b56baaa336b9549e
+lstb_SchGtAffTlVh.meas: 2c0fef59666d4b367210192ffdfda60b6bc76a5b7396f197634e336aa4812bd6
+lstb_SchGtAffTlVh.spi: 5d3c148b78d643d19aa2ac0946b3c54e09114e9a6a1205d36e5f82ef6bded3b4

@@ -1,0 +1,46 @@
+Warning: Optran step size potentially too large.
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run
+
+Note: No compatibility mode selected!
+
+
+Circuit: * measure rply_ex0
+
+Loading raw data file ("tran_SchGtAttTtVt.raw") ...
+done.
+Title:  cicsimgen tran
+Name: Transient Analysis
+Date: Fri Mar 22 23:18:20  2024
+
+Here are the vectors currently active:
+
+Title: cicsimgen tran
+Name: tran1 (Transient Analysis)
+Date: Fri Mar 22 23:18:20  2024
+
+    i(v.xdut.v1)        : current, real, 3018 long
+    i(v.xdut.v2)        : current, real, 3018 long
+    i(vdd)              : current, real, 3018 long
+    tdiff_120           : notype, real, 3018 long
+    time                : time, real, 3018 long [default scale]
+    v(rst)              : voltage, real, 3018 long
+    v(vb)               : voltage, real, 3018 long
+    v(vdd)              : voltage, real, 3018 long
+    v(vo)               : voltage, real, 3018 long
+    v(vro0)             : voltage, real, 3018 long
+    v(vss)              : voltage, real, 3018 long
+    v(xdut.vb)          : voltage, real, 3018 long
+    v(xdut.vb1)         : voltage, real, 3018 long
+    v(xdut.vbjt1)       : voltage, real, 3018 long
+    v(xdut.vbjt2)       : voltage, real, 3018 long
+    v(xdut.vbjt3)       : voltage, real, 3018 long
+    v(xdut.vn2)         : voltage, real, 3018 long
+    v(xdut.vo)          : voltage, real, 3018 long
+    v(xdut.vop)         : voltage, real, 3018 long
+    v(xdut.vro)         : voltage, real, 3018 long
+    v(xdut.vro0)        : voltage, real, 3018 long
+    vd                  : notype, real, 3018 long
+    vref                : notype, real, 3018 long
+    w_vdd               : notype, real, 3018 long
+MEAS_START
+MEAS_END

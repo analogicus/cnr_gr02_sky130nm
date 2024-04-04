@@ -1,0 +1,105 @@
+cicsimgen lstb
+*Nothing here
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include "/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice"
+.include "/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__mismatch.corner.spice"
+.include "/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.corner.spice"
+.include "/opt/pdk/share/pdk/sky130B/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__mismatch.corner.spice"
+.include "/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/corners/tt/nonfet.spice"
+.include "/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/all.spice"
+.include "/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical.spice"
+.include "/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice"
+.include "/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/corners/tt/specialized_cells.spice"
+
+.lib "../../../tech/ngspice/temperature.spi" Tt
+
+.lib "../../../tech/ngspice/supply.spi" Vt
+
+*TB_SUN_TR_SKY130NM/TB_NCM
+*----------------------------------------------------------------
+* Include
+*----------------------------------------------------------------
+.include ../../../work/xsch/OTA.spice
+
+*-----------------------------------------------------------------
+* OPTIONS
+*-----------------------------------------------------------------
+.option TNOM=27 GMIN=1e-15 reltol=1e-6
+
+*-----------------------------------------------------------------
+* PARAMETERS
+*-----------------------------------------------------------------
+.param TRF = 10p
+
+.param AVDD = {vdda}
+
+*-----------------------------------------------------------------
+* FORCE
+*-----------------------------------------------------------------
+VSS  VSS  0     dc 0
+VDD_1V8  VDD_1V8  0  dc {AVDD}
+VIP  VIP 0 dc 1.2
+*VIN  VO VIN dc 0 
+
+*vlp1 LPI LPO dc 0
+*-----------------------------------------------------------------
+* DUT
+*-----------------------------------------------------------------
+.include ../xdut.spi
+*.include ../load.spi
+
+
+
+.include ../../../../cpdk/ngspice/tian_subckt.lib
+X999 LPO LPI loopgainprobe
+
+*----------------------------------------------------------------
+* MEASURES
+*----------------------------------------------------------------
+
+*----------------------------------------------------------------
+* PROBE
+*----------------------------------------------------------------
+
+.save V(X999.x) I(v.X999.Vi)
+.save v(LPO) v(LPI)
+*.save v(AVDD)
+.save i(VSS)
+.save i(VDD_1V8)
+*----------------------------------------------------------------
+* NGSPICE control
+*----------------------------------------------------------------
+.control
+set num_threads=8
+set color0=white
+set color1=black
+unset askquit
+
+optran 0 0 0 10n 10u 0
+op
+write lstb_SchGtKttTtVt_op.raw
+
+*----------------------------------------------------------------
+* LSTB analysis
+*----------------------------------------------------------------
+* Set voltage AC to 1
+ac dec 50 1 0.1G
+
+* Set Current to 1
+alter i.X999.Ii acmag=1
+alter v.X999.Vi acmag=0
+ac dec 50 1 0.1G
+
+let lg_mag = db(tian_loop())
+let lg_phase = 180*cph(tian_loop())/pi
+
+write
+
+quit
+
+.endc
+
+.end
+

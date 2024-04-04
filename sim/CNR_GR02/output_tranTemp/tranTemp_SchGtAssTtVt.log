@@ -1,0 +1,130 @@
+Warning: Optran step size potentially too large.
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Jan 14 17:52:39 UTC 2024
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: cicsimgen trantemp
+
+Warning: Model issue on line:
+  .model xdut.xr2:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr2:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Note: Transient op started
+Note: Transient op finished successfully
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.25280e-06 Reference value :  1.21720e-05Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1514
+binary raw file "tranTemp_SchGtAssTtVt_-40"
+Doing analysis at TEMP = -30.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.64280e-06 Reference value :  1.25220e-05Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1514
+binary raw file "tranTemp_SchGtAssTtVt_-30"
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.81280e-06 Reference value :  1.23920e-05Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1514
+binary raw file "tranTemp_SchGtAssTtVt_-20"
+Doing analysis at TEMP = 20.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  4.90280e-06 Reference value :  1.10020e-05Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1514
+binary raw file "tranTemp_SchGtAssTtVt_20"
+Doing analysis at TEMP = 30.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  4.96280e-06 Reference value :  1.20320e-05Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1514
+binary raw file "tranTemp_SchGtAssTtVt_30"
+Doing analysis at TEMP = 40.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  4.70280e-06 Reference value :  1.09920e-05Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1514
+binary raw file "tranTemp_SchGtAssTtVt_40"
+Doing analysis at TEMP = 100.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  4.64280e-06 Reference value :  1.09720e-05Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1514
+binary raw file "tranTemp_SchGtAssTtVt_100"
+Doing analysis at TEMP = 110.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  4.72280e-06 Reference value :  1.07820e-05Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1514
+binary raw file "tranTemp_SchGtAssTtVt_110"
+Doing analysis at TEMP = 120.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.60280e-06 Reference value :  1.17120e-05
+No. of Data Rows : 1514
+binary raw file "tranTemp_SchGtAssTtVt_120"
+binary raw file "tranTemp_SchGtAssTtVt.raw"
+ngspice-42 done

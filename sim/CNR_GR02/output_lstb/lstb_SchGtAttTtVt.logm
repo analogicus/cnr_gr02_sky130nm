@@ -1,0 +1,57 @@
+Warning: Optran step size potentially too large.
+
+Note: No compatibility mode selected!
+
+
+Circuit: * measure lstb
+
+MEAS_START
+Loading raw data file ("lstb_SchGtAttTtVt_op.raw") ...
+done.
+Title:  cicsimgen lstb
+Name: Operating Point
+Date: Tue Apr  2 00:03:39  2024
+
+Here are the vectors currently active:
+
+Title: cicsimgen lstb
+Name: op1 (Operating Point)
+Date: Tue Apr  2 00:03:39  2024
+
+    i(v.x999.vi)        : current, real, 1 long
+    i(vdd_1v8)          : current, real, 1 long
+    i(vss)              : current, real, 1 long
+    v(lpi)              : voltage, real, 1 long
+    v(lpo)              : voltage, real, 1 long
+    v(x999.x)           : voltage, real, 1 long [default scale]
+i(vss) = 6.044319e-05
+idd = 6.044319e-05
+Loading raw data file ("lstb_SchGtAttTtVt.raw") ...
+done.
+Title:  cicsimgen lstb
+Name: AC Analysis
+Date: Tue Apr  2 00:03:39  2024
+
+Here are the vectors currently active:
+
+Title: cicsimgen lstb
+Name: ac2 (AC Analysis)
+Date: Tue Apr  2 00:03:39  2024
+
+    frequency           : frequency, complex, 401 long, grid = xlog [default scale]
+    i(v.x999.vi)        : current, complex, 401 long
+    i(vdd_1v8)          : current, complex, 401 long
+    i(vss)              : current, complex, 401 long
+    lg_mag              : decibel, complex, 401 long
+    lg_phase            : notype, complex, 401 long
+    v(lpi)              : voltage, complex, 401 long
+    v(lpo)              : voltage, complex, 401 long
+    v(x999.x)           : voltage, complex, 401 long
+gm_db               =  -2.528221e+01
+pm_deg              =  6.034373e+01
+f3db                =  1.091787e+06
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run
+ug                  =  1.400056e+07
+lf_gain             =  2.277138e+01
+binary raw file "lstb_SchGtAttTtVt_meas.raw"
+MEAS_END

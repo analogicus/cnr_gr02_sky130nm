@@ -1,0 +1,38 @@
+Warning: Optran step size potentially too large.
+Note: Transient op started
+Note: Transient op finished successfully
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Jan 14 17:52:39 UTC 2024
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: cicsimgen lstb
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1
+binary raw file "lstb_SchGtKttTtVt_op.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  1.00000e+00Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 401
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  1.00000e+00
+No. of Data Rows : 401
+binary raw file "lstb_SchGtKttTtVt.raw"
+ngspice-42 done

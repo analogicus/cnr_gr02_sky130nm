@@ -1,0 +1,186 @@
+Warning: Optran step size potentially too large.
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Jan 14 17:52:39 UTC 2024
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: cicsimgen tran
+
+Warning: Model issue on line:
+  .model xdut.xr2:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr2:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Note: Transient op started
+Note: Transient op finished successfully
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  6.04116e-05 Reference value :  1.30112e-04 Reference value :  2.00812e-04 Reference value :  2.74212e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_-40"
+Doing analysis at TEMP = -30.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  6.23116e-05 Reference value :  1.36412e-04 Reference value :  2.08812e-04 Reference value :  2.78212e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_-30"
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.89116e-05 Reference value :  1.29712e-04 Reference value :  1.97312e-04 Reference value :  2.67012e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_-20"
+Doing analysis at TEMP = -10.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.41116e-05 Reference value :  1.15912e-04 Reference value :  1.81012e-04 Reference value :  2.43312e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_-10"
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.27116e-05 Reference value :  1.18712e-04 Reference value :  1.84112e-04 Reference value :  2.55712e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_0"
+Doing analysis at TEMP = 10.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  6.21116e-05 Reference value :  1.25412e-04 Reference value :  1.93812e-04 Reference value :  2.66112e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_10"
+Doing analysis at TEMP = 20.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  6.31116e-05 Reference value :  1.36112e-04 Reference value :  2.05812e-04 Reference value :  2.69712e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_20"
+Doing analysis at TEMP = 30.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.63116e-05 Reference value :  1.29112e-04 Reference value :  1.99612e-04 Reference value :  2.72212e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_30"
+Doing analysis at TEMP = 40.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.57116e-05 Reference value :  1.17012e-04 Reference value :  1.91112e-04 Reference value :  2.65912e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_40"
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.74116e-05 Reference value :  1.21612e-04 Reference value :  1.90812e-04 Reference value :  2.64112e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_50"
+Doing analysis at TEMP = 60.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.48116e-05 Reference value :  1.17712e-04 Reference value :  1.85612e-04 Reference value :  2.46712e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_60"
+Doing analysis at TEMP = 70.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  6.62116e-05 Reference value :  1.42712e-04 Reference value :  2.13412e-04 Reference value :  2.85812e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_70"
+Doing analysis at TEMP = 80.000000 and TNOM = 27.000000
+
+ Reference value :  1.07116e-05 Reference value :  8.24116e-05 Reference value :  1.50712e-04 Reference value :  2.19312e-04 Reference value :  2.83112e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_80"
+Doing analysis at TEMP = 90.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.13116e-05 Reference value :  1.19112e-04 Reference value :  1.90612e-04 Reference value :  2.65912e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_90"
+Doing analysis at TEMP = 100.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.95116e-05 Reference value :  1.21412e-04 Reference value :  1.91012e-04 Reference value :  2.64212e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_100"
+Doing analysis at TEMP = 110.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  6.39116e-05 Reference value :  1.37912e-04 Reference value :  2.06612e-04 Reference value :  2.78912e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tran_SchGtAttTtVt_110"
+Doing analysis at TEMP = 120.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.40116e-05 Reference value :  1.22812e-04 Reference value :  1.86512e-04 Reference value :  2.54912e-04
+No. of Data Rows : 3018
+binary raw file "tran_SchGtAttTtVt_120"
+binary raw file "tran_SchGtAttTtVt.raw"
+ngspice-42 done

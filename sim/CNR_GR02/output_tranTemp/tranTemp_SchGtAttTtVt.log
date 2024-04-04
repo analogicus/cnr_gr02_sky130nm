@@ -1,0 +1,234 @@
+Warning: Optran step size potentially too large.
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Jan 14 17:52:39 UTC 2024
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: cicsimgen trantemp
+
+Warning: Model issue on line:
+  .model xdut.xr2:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr2:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Note: Transient op started
+Note: Transient op finished successfully
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.01116e-05 Reference value :  1.12212e-04 Reference value :  1.75912e-04 Reference value :  2.45512e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_-40  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_-40 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_-40"
+Doing analysis at TEMP = -30.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.69116e-05 Reference value :  1.23212e-04 Reference value :  1.74812e-04 Reference value :  2.37012e-04 Reference value :  2.95212e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_-30  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_-30 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_-30"
+Doing analysis at TEMP = -20.000000 and TNOM = 27.000000
+
+ Reference value :  8.82800e-06 Reference value :  7.15116e-05 Reference value :  1.32912e-04 Reference value :  1.92212e-04 Reference value :  2.56412e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_-20  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_-20 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_-20"
+Doing analysis at TEMP = -10.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  6.28116e-05 Reference value :  1.24212e-04 Reference value :  1.86612e-04 Reference value :  2.49912e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tranTemp_SchGtAttTtVt_-10"
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.36116e-05 Reference value :  1.23912e-04 Reference value :  1.94312e-04 Reference value :  2.66012e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tranTemp_SchGtAttTtVt_0"
+Doing analysis at TEMP = 10.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.66116e-05 Reference value :  1.21012e-04 Reference value :  1.90412e-04 Reference value :  2.66812e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tranTemp_SchGtAttTtVt_10"
+Doing analysis at TEMP = 20.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  6.54116e-05 Reference value :  1.32212e-04 Reference value :  1.95012e-04 Reference value :  2.54012e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tranTemp_SchGtAttTtVt_20"
+Doing analysis at TEMP = 30.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  4.79116e-05 Reference value :  1.11412e-04 Reference value :  1.73212e-04 Reference value :  2.40212e-04
+No. of Data Rows : 3018
+Note: Transient op started
+Note: Transient op finished successfully
+binary raw file "tranTemp_SchGtAttTtVt_30"
+Doing analysis at TEMP = 40.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.25116e-05 Reference value :  1.22512e-04 Reference value :  1.91512e-04 Reference value :  2.64312e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_40  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_40 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_40"
+Doing analysis at TEMP = 50.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.03116e-05 Reference value :  1.09512e-04 Reference value :  1.74912e-04 Reference value :  2.42212e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_50  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_50 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_50"
+Doing analysis at TEMP = 60.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  6.28116e-05 Reference value :  1.32612e-04 Reference value :  1.85412e-04 Reference value :  2.49812e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_60  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_60 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_60"
+Doing analysis at TEMP = 70.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  4.69116e-05 Reference value :  1.06812e-04 Reference value :  1.56412e-04 Reference value :  2.21112e-04 Reference value :  2.86912e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_70  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_70 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_70"
+Doing analysis at TEMP = 80.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  4.76116e-05 Reference value :  1.13612e-04 Reference value :  1.82012e-04 Reference value :  2.52412e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_80  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_80 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_80"
+Doing analysis at TEMP = 90.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.49116e-05 Reference value :  1.18712e-04 Reference value :  1.88312e-04 Reference value :  2.50112e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_90  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_90 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_90"
+Doing analysis at TEMP = 100.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.32116e-05 Reference value :  1.22512e-04 Reference value :  1.85212e-04 Reference value :  2.46412e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_100  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_100 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_100"
+Doing analysis at TEMP = 110.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  5.36116e-05 Reference value :  1.18812e-04 Reference value :  1.85712e-04 Reference value :  2.58012e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_110  trig(TARG) : out of interval
+Note: Transient op started
+Note: Transient op finished successfully
+ meas tran tdiff_110 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_110"
+Doing analysis at TEMP = 120.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00 Reference value :  4.42116e-05 Reference value :  1.04512e-04 Reference value :  1.65812e-04 Reference value :  2.28112e-04 Reference value :  2.95612e-04
+No. of Data Rows : 3018
+
+Error: measure  tdiff_120  trig(TARG) : out of interval
+ meas tran tdiff_120 trig v(rst) val=0.5 fall=1 targ v(vo) val=0.5 fall=1 failed!
+
+binary raw file "tranTemp_SchGtAttTtVt_120"
+binary raw file "tranTemp_SchGtAttTtVt.raw"
+ngspice-42 done

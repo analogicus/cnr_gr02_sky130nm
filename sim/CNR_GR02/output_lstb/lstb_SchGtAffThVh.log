@@ -1,0 +1,86 @@
+Warning: Optran step size potentially too large.
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Jan 14 17:52:39 UTC 2024
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: cicsimgen lstb
+
+Warning: Model issue on line:
+  .model xdut.xr2:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr2:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr1:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rhead_model r sw_et=0 isnoisy=0 rsh=    3.45831200000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+
+Warning: Model issue on line:
+  .model xdut.xr3:rbody_model r sw_et=0 isnoisy=0 rsh=    3.17388500000000 ...
+unrecognized parameter (sw_et) - ignored
+unrecognized parameter (isnoisy) - ignored
+unrecognized parameter (p2) - ignored
+unrecognized parameter (q2) - ignored
+unrecognized parameter (p3) - ignored
+unrecognized parameter (q3) - ignored
+
+Note: Transient op started
+Note: Transient op finished successfully
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 1
+binary raw file "lstb_SchGtAffThVh_op.raw"
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+ Reference value :  1.00000e+00Note: Transient op started
+Note: Transient op finished successfully
+
+No. of Data Rows : 401
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+ Reference value :  1.00000e+00
+No. of Data Rows : 401
+binary raw file "lstb_SchGtAffThVh.raw"
+ngspice-42 done

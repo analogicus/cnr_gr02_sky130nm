@@ -1,0 +1,35 @@
+Warning: Optran step size potentially too large.
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run
+
+Note: No compatibility mode selected!
+
+
+Circuit: * measure cnr_gr02
+
+Loading raw data file ("tran_SchGtAttTtVt.raw") ...
+done.
+Title:  cicsimgen tran
+Name: Transient Analysis
+Date: Fri Mar 22 18:29:59  2024
+
+Here are the vectors currently active:
+
+Title: cicsimgen tran
+Name: tran1 (Transient Analysis)
+Date: Fri Mar 22 18:29:59  2024
+
+    i(auto_dac3)        : current, real, 2020 long
+    i(auto_dac3)        : current, real, 2020 long
+    i(vdd)              : current, real, 2020 long
+    i(vo)               : current, real, 2020 long
+    i(vrst)             : current, real, 2020 long
+    i(vss)              : current, real, 2020 long
+    time                : time, real, 2020 long [default scale]
+    v(dout)             : voltage, real, 2020 long
+    v(reset)            : voltage, real, 2020 long
+    v(rst)              : voltage, real, 2020 long
+    v(vdd)              : voltage, real, 2020 long
+    v(vo)               : voltage, real, 2020 long
+    v(vss)              : voltage, real, 2020 long
+MEAS_START
+MEAS_END

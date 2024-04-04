@@ -1,0 +1,50 @@
+cicsimgen tran
+*Nothing here
+
+.lib  "/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice" tt
+
+.lib "../../../tech/ngspice/temperature.spi" Tt
+
+.lib "../../../tech/ngspice/supply.spi" Vt
+
+
+*----------------------------------------------------------------
+* Include
+*----------------------------------------------------------------
+
+
+*-----------------------------------------------------------------
+* OPTIONS
+*-----------------------------------------------------------------
+.option TEMP=40 GMIN=1e-15 reltol=1e-6 abstol=1e-6 keepopinfo noopiter gminsteps=5
+
+*-----------------------------------------------------------------
+* PARAMETERS
+*-----------------------------------------------------------------
+.param TRF = 10p
+
+
+*-----------------------------------------------------------------
+* FORCE
+*-----------------------------------------------------------------
+VSS  VSS  0     dc 0
+VDD  VDD  0  dc 1.8
+Vrst reset 0 pwl 0 1.8 10u 1.8 10.1u 0
+Vo vo 0 pwl 0 1.8 20u 1.8 20.1u 0
+
+R1 dout 0 1e6
+R2 rst 0 1e6
+
+adut [ clk reset vo ] [ rst dout ] null dut
+.model dut d_cosim simulation="../../verilog/temp_to_digital.so"
+
+ 
+.control
+
+tran 100n 200u
+
+save all
+write
+.endc
+.end
+

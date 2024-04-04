@@ -1,0 +1,61 @@
+Warning: Optran step size potentially too large.
+
+Note: No compatibility mode selected!
+
+
+Circuit: * measure lstb
+
+MEAS_START
+Loading raw data file ("lstb_SchGtAttTtVh_op.raw") ...
+done.
+Title:  cicsimgen lstb
+Name: Operating Point
+Date: Fri Mar 22 19:00:43  2024
+
+Here are the vectors currently active:
+
+Title: cicsimgen lstb
+Name: op1 (Operating Point)
+Date: Fri Mar 22 19:00:43  2024
+
+    i(v.x999.vi)        : current, real, 1 long
+    i(v.xdut.v1)        : current, real, 1 long [default scale]
+    i(v.xdut.v2)        : current, real, 1 long
+    i(vdd_1v8)          : current, real, 1 long
+    i(vss)              : current, real, 1 long
+    v(lpi)              : voltage, real, 1 long
+    v(lpo)              : voltage, real, 1 long
+    v(x999.x)           : voltage, real, 1 long
+i(vss) = 6.607302e-05
+idd = 6.607302e-05
+Loading raw data file ("lstb_SchGtAttTtVh.raw") ...
+done.
+Title:  cicsimgen lstb
+Name: AC Analysis
+Date: Fri Mar 22 19:00:43  2024
+
+Here are the vectors currently active:
+
+Title: cicsimgen lstb
+Name: ac2 (AC Analysis)
+Date: Fri Mar 22 19:00:43  2024
+
+    frequency           : frequency, complex, 401 long, grid = xlog [default scale]
+    i(v.x999.vi)        : current, complex, 401 long
+    i(v.xdut.v1)        : current, complex, 401 long
+    i(v.xdut.v2)        : current, complex, 401 long
+    i(vdd_1v8)          : current, complex, 401 long
+    i(vss)              : current, complex, 401 long
+    lg_mag              : decibel, complex, 401 long
+    lg_phase            : notype, complex, 401 long
+    v(lpi)              : voltage, complex, 401 long
+    v(lpo)              : voltage, complex, 401 long
+    v(x999.x)           : voltage, complex, 401 long
+gm_db               =  -2.392253e+01
+pm_deg              =  5.552585e+01
+f3db                =  1.495148e+06
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run
+ug                  =  1.746930e+07
+lf_gain             =  2.225113e+01
+binary raw file "lstb_SchGtAttTtVh_meas.raw"
+MEAS_END

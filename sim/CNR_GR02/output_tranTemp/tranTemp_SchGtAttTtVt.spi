@@ -1,0 +1,84 @@
+cicsimgen tranTemp
+*Nothing here
+
+.lib  "/opt/pdk/share/pdk/sky130B/libs.tech/ngspice/sky130.lib.spice" tt
+
+.lib "../../../tech/ngspice/temperature.spi" Tt
+
+.lib "../../../tech/ngspice/supply.spi" Vt
+
+*TB_SUN_TR_SKY130NM/TB_NCM
+*----------------------------------------------------------------
+* Include
+*----------------------------------------------------------------
+.include ../../../work/xsch/CNR_GR02.spice
+
+*-----------------------------------------------------------------
+* OPTIONS
+*-----------------------------------------------------------------
+.option TEMP=40 GMIN=1e-15 reltol=1e-6 abstol=1e-6 keepopinfo noopiter gminsteps=5
+
+*-----------------------------------------------------------------
+* PARAMETERS
+*-----------------------------------------------------------------
+.param TRF = 10p
+
+
+*-----------------------------------------------------------------
+* FORCE
+*-----------------------------------------------------------------
+VSS  VSS  0     dc 0
+VDD_1V8  VDD_1V8  0  dc 1.8
+Vrst rst 0 pwl 0 1.8 10u 1.8 10.01u 0
+
+*-----------------------------------------------------------------
+* DUT
+*-----------------------------------------------------------------
+XDUT VDD_1V8 VSS rst LPO LPI VO CNR_GR02
+
+*----------------------------------------------------------------
+* MEASURES
+*----------------------------------------------------------------
+
+
+*----------------------------------------------------------------
+* PROBE
+*----------------------------------------------------------------
+
+.save v(VDD_1v8) v(VSS) v(VO) v(xdut.D1) v(xdut.D2) v(xdut.VD3) v(xdut.D2_branch) i(vdd) v(rst)
+
+
+
+*----------------------------------------------------------------
+* NGSPICE control
+*----------------------------------------------------------------
+.control
+set num_threads=8
+set color0=white
+set color1=black
+set file = "tdiff.txt"
+unset askquit
+
+optran 0 0 0 100n 20u 0
+
+
+foreach vtemp -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120
+  option temp=$vtemp
+  tran 100n 300u
+  meas tran tdiff_$temp TRIG V(rst) VAL=0.5 FALL=1 TARG V(vo) VAL=0.5 FALL=1 >> $file
+  write tranTemp_SchGtAttTtVt_$vtemp
+end
+
+let vd2_branch = v(xdut.d2_branch)
+let vref =v(xdut.d2_branch)-v(xdut.d2)
+let vd = v(xdut.d1)-v(xdut.d2_branch)
+*let W_vdd = i(vdd)*1.8 
+*let vo = v(vo)
+
+write
+quit
+
+.endc
+
+.end
+

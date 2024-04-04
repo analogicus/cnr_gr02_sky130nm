@@ -1,0 +1,27 @@
+* Measure LSTB
+.control
+
+
+
+echo "MEAS_START"
+
+load lstb_SchGtAfsTlVl_op.raw
+
+let idd = -i(vdd_1v8)
+print i(vss)
+print idd
+
+load lstb_SchGtAfsTlVl.raw
+
+meas ac gm_db find lg_mag when lg_phase=0
+meas ac pm_deg find lg_phase when lg_mag=0
+meas ac f3db when lg_phase=135
+meas ac ug when lg_mag=0
+meas ac lf_gain find lg_mag at=1
+
+
+write lstb_SchGtAfsTlVl_meas.raw
+
+echo "MEAS_END"
+
+.endc
