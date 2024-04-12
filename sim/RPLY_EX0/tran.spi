@@ -39,12 +39,9 @@ XDUT VDD VSS rst RPLY_EX0
 * PROBE
 *----------------------------------------------------------------
 
-#ifdef Debug
 .save all
-#else
-.save v(VDD) v(VSS) v(xdut.VO) v(xdut.VBJT1) v(xdut.VBJT2) v(xdut.VBJT3) v(xdut.VRO) v(xdut.VRO0) i(vdd) v(xdut.Vb) v(xdut.Vb1) v(xdut.Vn1) v(xdut.Vn2) v(rst) v(xdut.Vop) v(xdut.Vn20) v(dt)
 
-#endif
+*.save v(VDD) v(VSS) v(xdut.VO) v(xdut.VBJT1) v(xdut.VBJT2) v(xdut.VBJT3) v(xdut.VRO) v(xdut.VRO0) i(vdd) v(xdut.Vb) v(xdut.Vb1) v(xdut.Vn1) v(xdut.Vn2) v(rst) v(xdut.Vop) v(xdut.Vn20) v(dt)
 
 *----------------------------------------------------------------
 * NGSPICE control
@@ -65,12 +62,12 @@ foreach vtemp -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120
   write {cicname}_$vtemp
 end
 
-let vro0= v(xdut.vro0)
-let vref=v(xdut.VRO0)-v(xdut.VBJT2)
-let vd= v(xdut.VBJT1)-v(xdut.VRO0)
-let W_vdd=i(vdd)*1.8 
-let vo=v(xdut.VO)
-let vb=v(xdut.Vb)
+*let vro0= v(xdut.vro0)
+*let vref=v(xdut.VRO0)-v(xdut.VBJT2)
+*let vd= v(xdut.VBJT1)-v(xdut.VRO0)
+*let W_vdd=i(vdd)*1.8 
+*let vo=v(xdut.VO)
+*let vb=v(xdut.Vb)
 
 write
 quit
