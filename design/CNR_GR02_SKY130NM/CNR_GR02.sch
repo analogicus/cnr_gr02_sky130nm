@@ -56,7 +56,7 @@ lab=#net2}
 N 2280 -1820 2280 -1620 {
 lab=#net3}
 N 1970 -1820 1970 -1620 {
-lab=LPO}
+lab=Vo}
 N 2010 -1590 2040 -1590 {
 lab=#net3}
 N 2210 -1590 2240 -1590 {
@@ -120,9 +120,9 @@ lab=#net4}
 N 1880 -1850 1930 -1850 {
 lab=D2_branch}
 N 1170 -1410 1200 -1410 {
-lab=LPI}
+lab=Vo}
 N 1200 -1470 1200 -1410 {
-lab=LPI}
+lab=Vo}
 N 1130 -1410 1130 -1380 {
 lab=VSS}
 N 1130 -1380 1130 -1330 {
@@ -208,9 +208,9 @@ lab=VDD_1V8}
 N 920 -1410 920 -1380 {
 lab=VSS}
 N 990 -1470 990 -1410 {
-lab=LPI}
+lab=Vo}
 N 960 -1410 990 -1410 {
-lab=LPI}
+lab=Vo}
 N 920 -1380 920 -1330 {
 lab=VSS}
 N 920 -2160 920 -1470 {
@@ -386,11 +386,9 @@ lab=#net1}
 N 2320 -1850 2360 -1850 {
 lab=D1}
 N 990 -1470 1200 -1470 {
-lab=LPI}
+lab=Vo}
 N 880 -1330 1070 -1330 {
 lab=VSS}
-N 1970 -1730 1990 -1730 {
-lab=LPO}
 N 1750 -1490 1750 -1330 {
 lab=VSS}
 N 1750 -2380 1750 -2110 {
@@ -515,8 +513,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1950 -1850 0 0 {name=M3
-L=1.5
-W=2
+L=0.5
+W=1.6
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -529,8 +527,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2300 -1850 0 1 {name=M4
-L=1.5
-W=2
+L=0.5
+W=1.6
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -543,8 +541,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 2260 -1590 0 0 {name=M5
-L=2
-W=2
+L=0.8
+W=1.5
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -557,8 +555,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1990 -1590 0 1 {name=M6
-L=2
-W=2
+L=0.8
+W=1.5
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -572,16 +570,16 @@ spiceprefix=X
 }
 C {devices/ipin.sym} 890 -2380 0 0 {name=p5 lab=VDD_1V8}
 C {devices/ipin.sym} 880 -1330 0 0 {name=p9 lab=VSS}
-C {sky130_fd_pr/res_high_po.sym} 2850 -1590 0 0 {name=R2
-W=.5
-L=40
-model=res_high_po
+C {sky130_fd_pr/res_high_po_0p35.sym} 2850 -1590 0 0 {name=R2
+W=.35
+L=23.16
+model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_high_po.sym} 2510 -1590 0 0 {name=R1
-W=.5
-L=10
-model=res_high_po
+C {sky130_fd_pr/res_high_po_0p35.sym} 2510 -1590 0 0 {name=R1
+W=.35
+L=5.9
+model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/nfet_01v8.sym} 1730 -1570 0 0 {name=M7
@@ -598,10 +596,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/res_high_po.sym} 1750 -1790 0 0 {name=R3
-W=.5
-L=20
-model=res_high_po
+C {sky130_fd_pr/res_high_po_0p35.sym} 1750 -1790 0 0 {name=R3
+W=.34
+L=11.65
+model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {devices/lab_wire.sym} 1890 -1850 0 0 {name=p3 sig_type=std_logic lab=D2_branch}
@@ -706,7 +704,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/ipin.sym} 3000 -1590 0 0 {name=p20 lab=rst}
-C {sky130_fd_pr/nfet_01v8.sym} 3050 -1590 0 0 {name=M27
+C {sky130_fd_pr/nfet_01v8.sym} 3050 -1590 0 0 {name=M20
 L=1
 W=3
 nf=2 
@@ -750,8 +748,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 3100 -2190 0 0 {name=M19
-L=5
-W=10
+L=1
+W=5
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -772,6 +770,6 @@ C {sky130_fd_pr/cap_mim_m3_2.sym} 3300 -1710 3 1 {name=C6 model=cap_mim_m3_2 W=3
 C {sky130_fd_pr/cap_mim_m3_2.sym} 3300 -1430 3 1 {name=C7 model=cap_mim_m3_2 W=10 L=10 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 3300 -1850 3 1 {name=C8 model=cap_mim_m3_2 W=30 L=30 MF=1 spiceprefix=X}
 C {devices/lab_wire.sym} 2510 -1810 0 0 {name=p1 sig_type=std_logic lab=D2_branch}
-C {devices/opin.sym} 1990 -1730 0 0 {name=p6 lab=LPO}
-C {devices/ipin.sym} 990 -1470 0 0 {name=p12 lab=LPI}
 C {devices/opin.sym} 3450 -2040 0 0 {name=p2 lab=VO}
+C {devices/lab_wire.sym} 1970 -1710 0 0 {name=p6 sig_type=std_logic lab=Vo}
+C {devices/lab_wire.sym} 990 -1470 0 0 {name=p11 sig_type=std_logic lab=Vo}
