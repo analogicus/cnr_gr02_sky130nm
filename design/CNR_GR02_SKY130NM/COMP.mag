@@ -1,0 +1,76 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1713176887
+<< checkpaint >>
+rect -1260 1460 1272 1861
+rect -1260 -3260 1460 1460
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+use CNRATR_NCH_4C2F0  x1
+timestamp 0
+transform 1 0 7 0 1 600
+box 0 0 1 1
+use CNRATR_NCH_4C2F0  x2
+timestamp 0
+transform 1 0 0 0 1 600
+box 0 0 1 1
+use CNRATR_NCH_4C2F0  x3
+timestamp 0
+transform 1 0 1 0 1 600
+box 0 0 1 1
+use CNRATR_PCH_4C2F0  x5
+timestamp 0
+transform 1 0 5 0 1 600
+box 0 0 1 1
+use CNRATR_NCH_4C2F0  x6
+timestamp 0
+transform 1 0 6 0 1 600
+box 0 0 1 1
+use CNRATR_PCH_4C2F0  x7
+timestamp 0
+transform 1 0 2 0 1 600
+box 0 0 1 1
+use CNRATR_PCH_4C2F0  x8
+timestamp 0
+transform 1 0 4 0 1 600
+box 0 0 1 1
+use CNRATR_PCH_4C2F0  x9
+timestamp 0
+transform 1 0 3 0 1 600
+box 0 0 1 1
+use CNRATR_NCH_4C2F0  x10
+timestamp 0
+transform 1 0 8 0 1 600
+box 0 0 1 1
+use CNRATR_NCH_4C2F0  x11
+timestamp 0
+transform 1 0 9 0 1 600
+box 0 0 1 1
+use CNRATR_PCH_4C2F0  x12
+timestamp 0
+transform 1 0 10 0 1 600
+box 0 0 1 1
+use CNRATR_PCH_4C2F0  x13
+timestamp 0
+transform 1 0 11 0 1 600
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VDD
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 VIP
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 VIN
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 VO
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 I_BIAS
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 VSS
+port 5 nsew
+<< end >>

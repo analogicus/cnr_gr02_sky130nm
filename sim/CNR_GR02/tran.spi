@@ -24,11 +24,11 @@
 VSS VSS 0 dc 0
 VDD_1V8 VDD_1V8 0 dc 1.8
 Vrst rst 0 pwl 0 1.8 10u 1.8 10.01u 0
-*Vopamp LPO LPI dc 0
+Vopamp LPO LPI dc 0
 *-----------------------------------------------------------------
 * DUT
 *-----------------------------------------------------------------
-XDUT VDD_1V8 VSS rst CNR_GR02
+XDUT VDD_1V8 VSS rst LPO LPI VO CNR_GR02
 
 *----------------------------------------------------------------
 * MEASURES

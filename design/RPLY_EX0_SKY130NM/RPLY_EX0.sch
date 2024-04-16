@@ -66,7 +66,7 @@ lab=#net1}
 N 1820 -580 1820 -380 {
 lab=#net2}
 N 1510 -580 1510 -380 {
-lab=VO}
+lab=LPO}
 N 1550 -350 1580 -350 {
 lab=#net2}
 N 1750 -350 1780 -350 {
@@ -563,7 +563,6 @@ spiceprefix=X
 C {devices/ipin.sym} 910 -870 0 0 {name=p5 lab=VDD}
 C {devices/ipin.sym} 910 -250 0 0 {name=p9 lab=VSS}
 C {devices/lab_wire.sym} 2180 -620 0 0 {name=p1 sig_type=std_logic lab=VRO0}
-C {devices/lab_wire.sym} 1510 -490 0 0 {name=p2 sig_type=std_logic lab=VO}
 C {sky130_fd_pr/res_high_po.sym} 2520 -350 0 0 {name=R2
 W=.5
 L=40
@@ -698,7 +697,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_wire.sym} 410 -230 0 0 {name=p11 sig_type=std_logic lab=VO}
 C {devices/lab_wire.sym} 3050 -440 0 0 {name=p16 sig_type=std_logic lab=Vn2}
 C {devices/ipin.sym} 2850 -350 0 0 {name=p20 lab=rst}
 C {sky130_fd_pr/nfet_01v8.sym} 2900 -350 0 0 {name=M27
@@ -763,3 +761,5 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/opin.sym} 1510 -490 0 0 {name=p2 lab=LPO}
+C {devices/ipin.sym} 240 -230 1 0 {name=p14 lab=LPI}

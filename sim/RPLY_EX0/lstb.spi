@@ -1,4 +1,3 @@
-*TB_SUN_TR_SKY130NM/TB_NCM
 *----------------------------------------------------------------
 * Include
 *----------------------------------------------------------------
@@ -11,7 +10,7 @@
 *-----------------------------------------------------------------
 * OPTIONS
 *-----------------------------------------------------------------
-.option TEMP=40 GMIN=1e-15 reltol=1e-6 abstol=1e-6 keepopinfo noopiter gminsteps=5
+.option TNOM=27 GMIN=1e-15 reltol=1e-6
 
 *-----------------------------------------------------------------
 * PARAMETERS
@@ -22,26 +21,28 @@
 * FORCE
 *-----------------------------------------------------------------
 VSS  VSS  0     dc 0
-VDD  VDD  0  dc 1.8
-Vrst rst 0 pwl 0 1.8 10u 1.8 10.01u 0
-Vopamp LPO LPI dc 0
+VDD  VDD  0  dc 1.8 
+vrst rst 0 dc 0
 *-----------------------------------------------------------------
 * DUT
 *-----------------------------------------------------------------
-XDUT VDD VSS rst RPLY_EX0
+XDUT VDD VSS rst LPO LPI RPLY_EX0
+
+.include ../../../../cpdk/ngspice/tian_subckt.lib
+X999 LPO LPI loopgainprobe
 
 *----------------------------------------------------------------
 * MEASURES
 *----------------------------------------------------------------
 
-
 *----------------------------------------------------------------
 * PROBE
 *----------------------------------------------------------------
 
-.save all
-
-*.save v(VDD) v(VSS) v(xdut.VO) v(xdut.VBJT1) v(xdut.VBJT2) v(xdut.VBJT3) v(xdut.VRO) v(xdut.VRO0) i(vdd) v(xdut.Vb) v(xdut.Vb1) v(xdut.Vn1) v(xdut.Vn2) v(rst) v(xdut.Vop) v(xdut.Vn20) v(dt)
+.save V(X999.x) I(v.X999.Vi)
+.save v(LPO) v(LPI)
+.save i(VSS)
+.save i(VDD)
 
 *----------------------------------------------------------------
 * NGSPICE control
@@ -50,28 +51,29 @@ XDUT VDD VSS rst RPLY_EX0
 set num_threads=8
 set color0=white
 set color1=black
-set file = "tdiff.txt"
 unset askquit
 
-optran 0 0 0 100n 20u 0
+optran 0 0 0 10n 10u 0
+op
+write {cicname}_op.raw
 
-foreach vtemp -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120
-  option temp=$vtemp
-  tran 100n 300u
-  meas tran tdiff_$vtemp TRIG V(rst) VAL=0.5 FALL=1 TARG V(xdut.Vop) VAL=.5 FALL=1 >> $file
-  write {cicname}_$vtemp
-end
+*----------------------------------------------------------------
+* LSTB analysis
+*----------------------------------------------------------------
+* Set voltage AC to 1
+ac dec 50 1 0.1G
 
-*let vro0= v(xdut.vro0)
-*let vref=v(xdut.VRO0)-v(xdut.VBJT2)
-*let vd= v(xdut.VBJT1)-v(xdut.VRO0)
-*let W_vdd=i(vdd)*1.8 
-*let vo=v(xdut.VO)
-*let vb=v(xdut.Vb)
+* Set Current to 1
+alter i.X999.Ii acmag=1
+alter v.X999.Vi acmag=0
+ac dec 50 1 0.1G
+
+let lg_mag = db(tian_loop())
+let lg_phase = 180*cph(tian_loop())/pi
 
 write
+
 quit
-#endif
 
 .endc
 
