@@ -91,23 +91,19 @@ N 1000 1140 1360 1140 {
 lab=VSS}
 N 1710 780 1750 780 {
 lab=VIP}
-N 960 520 1140 520 {
-lab=VDD_1V8}
 N 1290 780 1320 780 {
 lab=LPI}
 N 1360 880 1750 880 {
 lab=#net1}
 N 1360 1140 1670 1140 {
 lab=VSS}
+N 962.5 520 1140 520 {
+lab=VDD_1V8}
+N 1800 880 1860 880 {}
 C {cborder/border_s.sym} 1850 1190 0 0 {}
 C {devices/ipin.sym} 945 1140 0 0 {name=p3 lab=VSS}
 C {devices/ipin.sym} 962.5 520 0 0 {name=p1 lab=VDD_1V8}
 C {devices/opin.sym} 1890 880 0 0 {name=p4 lab=LPO}
-C {devices/res.sym} 1830 880 3 0 {name=R1
-value=100k
-footprint=1206
-device=resistor
-m=1}
 C {sky130_fd_pr/pfet_01v8.sym} 1160 630 0 1 {name=M1
 L=0.3
 W=3

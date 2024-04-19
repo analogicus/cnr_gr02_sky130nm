@@ -56,7 +56,7 @@ lab=#net2}
 N 2280 -1820 2280 -1620 {
 lab=#net3}
 N 1970 -1820 1970 -1620 {
-lab=Vo}
+lab=LPO}
 N 2010 -1590 2040 -1590 {
 lab=#net3}
 N 2210 -1590 2240 -1590 {
@@ -120,9 +120,9 @@ lab=#net4}
 N 1880 -1850 1930 -1850 {
 lab=D2_branch}
 N 1170 -1410 1200 -1410 {
-lab=Vo}
+lab=LPI}
 N 1200 -1470 1200 -1410 {
-lab=Vo}
+lab=LPI}
 N 1130 -1410 1130 -1380 {
 lab=VSS}
 N 1130 -1380 1130 -1330 {
@@ -208,9 +208,9 @@ lab=VDD_1V8}
 N 920 -1410 920 -1380 {
 lab=VSS}
 N 990 -1470 990 -1410 {
-lab=Vo}
+lab=LPI}
 N 960 -1410 990 -1410 {
-lab=Vo}
+lab=LPI}
 N 920 -1380 920 -1330 {
 lab=VSS}
 N 920 -2160 920 -1470 {
@@ -386,7 +386,7 @@ lab=#net1}
 N 2320 -1850 2360 -1850 {
 lab=D1}
 N 990 -1470 1200 -1470 {
-lab=Vo}
+lab=LPI}
 N 880 -1330 1070 -1330 {
 lab=VSS}
 N 1750 -1490 1750 -1330 {
@@ -606,7 +606,7 @@ C {devices/lab_wire.sym} 1890 -1850 0 0 {name=p3 sig_type=std_logic lab=D2_branc
 C {devices/lab_wire.sym} 2360 -1850 0 0 {name=p10 sig_type=std_logic lab=D1}
 C {sky130_fd_pr/nfet_01v8.sym} 1150 -1410 0 1 {name=M8
 L=3
-W=2
+W=1.7
 nf=2 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -767,9 +767,9 @@ C {sky130_fd_pr/cap_mim_m3_2.sym} 3210 -1430 3 1 {name=C3 model=cap_mim_m3_2 W=3
 C {sky130_fd_pr/cap_mim_m3_2.sym} 3210 -1850 3 1 {name=C4 model=cap_mim_m3_2 W=30 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 3300 -1570 3 1 {name=C5 model=cap_mim_m3_2 W=30 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 3300 -1710 3 1 {name=C6 model=cap_mim_m3_2 W=30 L=30 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 3300 -1430 3 1 {name=C7 model=cap_mim_m3_2 W=10 L=10 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 3300 -1430 3 1 {name=C7 model=cap_mim_m3_2 W=11 L=11.7 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 3300 -1850 3 1 {name=C8 model=cap_mim_m3_2 W=30 L=30 MF=1 spiceprefix=X}
 C {devices/lab_wire.sym} 2510 -1810 0 0 {name=p1 sig_type=std_logic lab=D2_branch}
 C {devices/opin.sym} 3450 -2040 0 0 {name=p2 lab=VO}
-C {devices/lab_wire.sym} 1970 -1710 0 0 {name=p6 sig_type=std_logic lab=Vo}
-C {devices/lab_wire.sym} 990 -1470 0 0 {name=p11 sig_type=std_logic lab=Vo}
+C {devices/opin.sym} 1970 -1730 0 0 {name=p6 lab=LPO}
+C {devices/ipin.sym} 990 -1470 0 0 {name=p11 lab=LPI}

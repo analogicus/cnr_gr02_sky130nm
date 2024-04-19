@@ -66,12 +66,12 @@ write {cicname}_op.raw
 * LSTB analysis
 *----------------------------------------------------------------
 * Set voltage AC to 1
-ac dec 50 1 0.1G
+ac dec 50 1 100G
 
 * Set Current to 1
 alter i.X999.Ii acmag=1
 alter v.X999.Vi acmag=0
-ac dec 50 1 0.1G
+ac dec 50 1 100G
 
 let lg_mag = db(tian_loop())
 let lg_phase = 180*cph(tian_loop())/pi

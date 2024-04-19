@@ -1,0 +1,9 @@
+magic
+tech sky130B
+timestamp 1713553704
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  XQ1 $PDKPATH/libs.ref/sky130_fd_pr/mag
+array 0 5 644 0 0 644
+timestamp 1705202102
+transform 1 0 0 0 1 300
+box 0 0 670 670
+<< end >>

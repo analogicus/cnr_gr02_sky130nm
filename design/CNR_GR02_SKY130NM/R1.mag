@@ -1,0 +1,9 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1713479265
+use sky130_fd_pr__res_high_po_0p35_BQVCZY  XR1
+timestamp 0
+transform 1 0 7703 0 1 -3196
+box 0 0 1 1
+<< end >>

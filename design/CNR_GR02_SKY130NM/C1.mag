@@ -1,0 +1,59 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1713442345
+<< error_s >>
+rect 27445 -1230 27669 -1228
+rect 27445 -7390 27727 -1230
+rect 34165 -1231 34389 -1229
+rect 27765 -7294 27989 -1326
+rect 34165 -7391 34447 -1231
+rect 40885 -1232 41109 -1230
+rect 34485 -7295 34709 -1327
+rect 40885 -7392 41167 -1232
+rect 57045 -1235 57269 -1233
+rect 41205 -7296 41429 -1328
+rect 47605 -5233 47829 -5009
+rect 50549 -5232 50607 -5153
+rect 47605 -7393 47887 -5233
+rect 47925 -7297 48149 -5329
+rect 50325 -7394 50607 -5232
+rect 50645 -7298 50869 -4912
+rect 57045 -7395 57327 -1235
+rect 63765 -1236 63989 -1234
+rect 57365 -7299 57589 -1331
+rect 63765 -7396 64047 -1236
+rect 64085 -7300 64309 -1332
+use sky130_fd_pr__cap_mim_m3_2_3HBNLG  XC1
+timestamp 0
+transform 1 0 31018 0 1 -4310
+box -3349 -3081 3371 3081
+use sky130_fd_pr__cap_mim_m3_2_3HBNLG  XC2
+timestamp 0
+transform 1 0 37738 0 1 -4311
+box -3349 -3081 3371 3081
+use sky130_fd_pr__cap_mim_m3_2_3HBNLG  XC3
+timestamp 0
+transform 1 0 44458 0 1 -4312
+box -3349 -3081 3371 3081
+use sky130_fd_pr__cap_mim_m3_2_4PHTN9  XC4
+timestamp 0
+transform 1 0 49178 0 1 -6313
+box -1349 -1081 1371 1081
+use sky130_fd_pr__cap_mim_m3_2_3HBNLG  XC5
+timestamp 0
+transform 1 0 53898 0 1 -4314
+box -3349 -3081 3371 3081
+use sky130_fd_pr__cap_mim_m3_2_3HBNLG  XC6
+timestamp 0
+transform 1 0 60618 0 1 -4315
+box -3349 -3081 3371 3081
+use sky130_fd_pr__cap_mim_m3_2_3HBNLG  XC7
+timestamp 0
+transform 1 0 67338 0 1 -4316
+box -3349 -3081 3371 3081
+use sky130_fd_pr__cap_mim_m3_2_3HBNLG  XC9
+timestamp 0
+transform 1 0 24298 0 1 -4309
+box -3349 -3081 3371 3081
+<< end >>
