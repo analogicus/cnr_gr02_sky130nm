@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1713553704
+timestamp 1713555407
 << locali >>
 rect -685 -742 -651 -430
 rect -450 -742 -334 -410
@@ -13,11 +13,11 @@ rect 704 -742 738 -490
 rect -946 -838 884 -742
 << metal1 >>
 rect -180 -252 170 -116
-use M8  M8_0 ../design/CNR_GR02_SKY130NM
+use M8  M8_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
 timestamp 1713518785
 transform 0 -1 395 1 0 -126
 box -496 -379 496 379
-use M22  M22_0 ../design/CNR_GR02_SKY130NM
+use M22  M22_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
 timestamp 1713518682
 transform 0 1 -372 1 0 -175
 box -396 -349 396 349

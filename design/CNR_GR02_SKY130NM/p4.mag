@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1713553704
+timestamp 1713555407
 << nwell >>
 rect 802 2054 1890 2286
 << locali >>
@@ -16,19 +16,12 @@ rect 1809 1947 1843 2251
 rect 1250 1940 1366 2382
 rect 1799 1792 1851 2438
 rect 1688 1740 1851 1792
-use M9  M9_0
+use M9  M9_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
 timestamp 1713524830
 transform 0 1 1396 -1 0 2462
 box -236 -584 236 584
 use p2  p2_0
-timestamp 1713553704
+timestamp 1713555407
 transform 1 0 0 0 1 0
 box 0 0 1878 2830
-<< labels >>
-flabel space 286 2794 314 2818 0 FreeSans 320 0 0 0 VDD
-port 1 nsew
-flabel space 114 28 142 52 0 FreeSans 320 0 0 0 VSS
-port 2 nsew
-flabel space 652 1494 680 1518 0 FreeSans 320 0 0 0 Vb
-flabel space 1360 1386 1388 1410 0 FreeSans 320 0 0 0 Vb1
-<< end >>
+

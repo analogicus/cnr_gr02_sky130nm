@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1713551957
+timestamp 1713561060
 << nwell >>
 rect 3960 3042 6445 4120
 rect 9900 3166 12400 4102
@@ -186,15 +186,15 @@ rect 10695 2523 10701 2637
 rect 10855 2599 10933 2815
 rect 3545 2517 3659 2523
 rect 10855 2515 10933 2521
-use M1  M1_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M1  M1_0 ../design/CNR_GR02_SKY130NM
 timestamp 1713519087
 transform 0 1 11510 -1 0 3860
 box -226 -484 226 484
-use M2  M2_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M2  M2_0 ../design/CNR_GR02_SKY130NM
 timestamp 1713519243
 transform 0 1 11714 -1 0 3392
 box -226 -684 226 684
-use M3  M3_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M3  M3_0 ../design/CNR_GR02_SKY130NM
 timestamp 1713519362
 transform 0 -1 10848 1 0 2932
 box -246 -344 246 344
@@ -202,52 +202,52 @@ use M3  M3_1
 timestamp 1713519362
 transform 0 1 11534 -1 0 2930
 box -246 -344 246 344
-use M7  M7_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M7  M7_0 ../design/CNR_GR02_SKY130NM
 timestamp 1713518916
 transform 0 -1 10757 -1 0 1796
 box -296 -299 296 299
-use M9  M9_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M9  M9_0 ../design/CNR_GR02_SKY130NM
 timestamp 1713524830
 transform 0 -1 10252 1 0 3866
 box -236 -584 236 584
-use M10  M10_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M10  M10_0 ../design/CNR_GR02_SKY130NM
 timestamp 1713518505
 transform 0 -1 10346 -1 0 3402
 box -236 -684 236 684
-use M14  M14_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
-timestamp 1713551797
+use M14  M14_0 ../design/CNR_GR02_SKY130NM
+timestamp 1713520534
 transform 0 1 5443 -1 0 3889
 box -305 -919 305 1002
-use M16  M16_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
-timestamp 1713551797
+use M16  M16_0 ../design/CNR_GR02_SKY130NM
+timestamp 1713520667
 transform 0 -1 7512 -1 0 2582
 box -996 -1684 996 1684
-use M19  M19_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M19  M19_0 ../design/CNR_GR02_SKY130NM
 timestamp 1713520772
 transform 0 -1 7086 -1 0 3832
 box -296 -684 296 684
-use M27  M27_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M27  M27_0 ../design/CNR_GR02_SKY130NM
 timestamp 1713522689
 transform 0 1 8313 -1 0 3888
 box -296 -479 296 479
 use p7  p7_0
-timestamp 1713551797
+timestamp 1713561060
 transform 1 0 12 0 1 1416
 box -12 -1416 7768 2830
-use Q2  Q2_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
-timestamp 1713441746
+use Q2  Q2_0 ../design/CNR_GR02_SKY130NM
+timestamp 1713553704
 transform 1 0 2 0 1 -600
 box 7780 600 9120 1940
 use sky130_fd_pr__res_high_po_0p35_CMWQMJ  sky130_fd_pr__res_high_po_0p35_CMWQMJ_0
-timestamp 1713551797
+timestamp 1713555407
 transform 0 1 4742 -1 0 2403
 box -533 -1032 533 1032
 use sky130_fd_pr__res_high_po_0p35_K2NARC  sky130_fd_pr__res_high_po_0p35_K2NARC_0
-timestamp 1713551797
+timestamp 1713555407
 transform 1 0 10008 0 1 2278
 box -450 -828 450 828
 use sky130_fd_pr__res_high_po_0p35_N7UQCW  sky130_fd_pr__res_high_po_0p35_N7UQCW_0
-timestamp 1713551797
+timestamp 1713555407
 transform 0 1 4449 -1 0 1649
 box -201 -1237 201 1237
 << end >>

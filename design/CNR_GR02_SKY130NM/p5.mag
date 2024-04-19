@@ -26,11 +26,11 @@ rect 629 1619 3135 1625
 rect 629 1577 641 1619
 rect 683 1577 3135 1619
 rect 629 1571 3135 1577
-use M9  M9_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M9  M9_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
 timestamp 1713524830
 transform 0 1 2600 -1 0 2468
 box -236 -584 236 584
-use M10  M10_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M10  M10_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
 timestamp 1713518505
 transform 0 1 2580 -1 0 1864
 box -236 -684 236 684

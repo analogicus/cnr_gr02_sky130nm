@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1713527839
+timestamp 1713555407
 << nwell >>
 rect 249 2698 5025 2704
 rect 249 1626 5026 2698
@@ -50,7 +50,7 @@ rect 2494 1407 2500 1469
 rect 2426 976 2500 1407
 rect 2408 906 2500 976
 rect 2426 879 2500 906
-use M9  M9_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M9  M9_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
 timestamp 1713524830
 transform 0 1 2600 -1 0 2468
 box -236 -584 236 584
@@ -58,7 +58,7 @@ use M9  M9_1
 timestamp 1713524830
 transform 0 1 3870 -1 0 2464
 box -236 -584 236 584
-use M10  M10_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use M10  M10_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
 timestamp 1713518505
 transform 0 1 2580 -1 0 1864
 box -236 -684 236 684
@@ -67,10 +67,10 @@ timestamp 1713518505
 transform 0 1 3970 -1 0 1860
 box -236 -684 236 684
 use p4  p4_0
-timestamp 1713525798
+timestamp 1713555407
 transform 1 0 0 0 1 0
 box 0 0 1980 2830
-use Q2  Q2_0 ~/lpro/temp_to_current_temp1_layout1/rply_ex0_sky130nm/design/RPLY_EX0_SKY130NM/mag
+use Q2  Q2_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
 timestamp 1713441746
 transform 1 0 -6028 0 1 -586
 box 7780 600 9120 1940
