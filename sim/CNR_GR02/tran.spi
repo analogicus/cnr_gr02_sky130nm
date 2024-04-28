@@ -38,7 +38,6 @@ XDUT VDD_1V8 VSS rst VO LPO LPI CNR_GR02
 *----------------------------------------------------------------
 * PROBE
 *----------------------------------------------------------------
-
 .save all
 
 *----------------------------------------------------------------
@@ -55,7 +54,7 @@ optran 0 0 0 100n 20u 0
 foreach vtemp -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120 
   option temp=$vtemp
   tran 100n 175u
-  meas tran tdiff_$vtemp TRIG V(rst) VAL=0.5 FALL=1 TARG V(VO) VAL=.5 FALL=1 >> $file
+  meas tran tdiff_$vtemp TRIG V(rst) VAL=0.5 FALL=1 TARG V(xdut.vop) VAL=.5 FALL=1 >> $file
   write {cicname}_$vtemp
 end
 

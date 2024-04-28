@@ -606,7 +606,7 @@ C {devices/lab_wire.sym} 1890 -1850 0 0 {name=p3 sig_type=std_logic lab=D2_branc
 C {devices/lab_wire.sym} 2360 -1850 0 0 {name=p10 sig_type=std_logic lab=D1}
 C {sky130_fd_pr/nfet_01v8.sym} 1150 -1410 0 1 {name=M8
 L=3
-W=2
+W=1.7
 nf=2 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
