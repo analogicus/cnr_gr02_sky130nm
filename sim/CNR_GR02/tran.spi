@@ -17,13 +17,14 @@
 * PARAMETERS
 *-----------------------------------------------------------------
 .param TRF = 10p
+.param VDD = {vdda}
 
 *-----------------------------------------------------------------
 * FORCE
 *-----------------------------------------------------------------
 VSS VSS 0 dc 0
-VDD_1V8 VDD_1V8 0 dc 1.8
-Vrst rst 0 pwl 0 1.8 10u 1.8 10.01u 0
+VDD_1V8 VDD_1V8 0 dc VDD 
+Vrst rst 0 pwl 0 VDD 10u 1.8 10.01u 0
 Vopamp LPO LPI dc 0
 *-----------------------------------------------------------------
 * DUT
@@ -50,6 +51,7 @@ set color1=black
 set file = "tdiff.txt"
 unset askquit
 
+* Temperature sweep with rst triggering
 optran 0 0 0 100n 20u 0
 foreach vtemp -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120 
   option temp=$vtemp
@@ -58,16 +60,9 @@ foreach vtemp -40 -30 -20 -10 0 10 20 30 40 50 60 70 80 90 100 110 120
   write {cicname}_$vtemp
 end
 
-* Checks
-*let vd2branch = v(xdut.D2_Branch)
-*let vref=v(xdut.D2_branch)-v(xdut.D2)
-*let vd= v(xdut.D1)-v(xdut.D2_Branch) 
-*let lpo=v(LPO)
-
 write
 quit
 #endif
 
 .endc
-
 .end
