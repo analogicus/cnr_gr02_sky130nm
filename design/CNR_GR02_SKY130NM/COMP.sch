@@ -130,19 +130,21 @@ lab=#net2}
 N 970 -410 1000 -410 {
 lab=VO}
 N 330 -390 360 -390 {
-lab=VIN}
+lab=VIP}
 N 280 -350 280 -290 {
 lab=I_BIAS}
-N 530 -660 690 -580 {
-lab=#net2}
 N 490 -580 650 -660 {
 lab=#net3}
-N 400 -390 770 -390 {}
-N 680 -390 680 -70 {}
+N 400 -390 400 -360 {
+lab=#net1}
+N 770 -390 770 -360 {
+lab=#net1}
+N 530 -660 690 -580 {
+lab=#net2}
 C {devices/ipin.sym} 105 -70 0 0 {name=p3 lab=VSS}
 C {devices/ipin.sym} 132.5 -740 0 0 {name=p1 lab=VDD}
-C {devices/ipin.sym} 330 -390 0 0 {name=p5 lab=VIN}
-C {devices/ipin.sym} 840 -390 0 1 {name=p6 lab=VIP}
+C {devices/ipin.sym} 330 -390 0 0 {name=p5 lab=VIP}
+C {devices/ipin.sym} 840 -390 0 1 {name=p6 lab=VIN}
 C {../CNR_ATR_SKY130NM/CNRATR_NCH_4C2F0.sym} 360 -390 0 0 {name=x2 }
 C {../CNR_ATR_SKY130NM/CNRATR_NCH_4C2F0.sym} 810 -390 0 1 {name=x3 }
 C {../CNR_ATR_SKY130NM/CNRATR_PCH_2C2F0.mag} 697.5 -662.5 0 0 {name=x4 }
