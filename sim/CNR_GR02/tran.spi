@@ -17,28 +17,19 @@
 * PARAMETERS
 *-----------------------------------------------------------------
 .param TRF = 10p
-
+*.param VDD = {vdda}
 
 *-----------------------------------------------------------------
 * FORCE
 *-----------------------------------------------------------------
-VSS  VSS  0     dc 0
-VDD  VDD  0  dc 1.8
+VSS VSS 0 dc 0
+VDD_1V8 VDD_1V8 0 dc 1.8 
 Vrst rst 0 pwl 0 1.8 10u 1.8 10.01u 0
-*-----------------------------------------------------------------
-* To test OTA
-*-----------------------------------------------------------------
-*Rin1	in1	vcm1	100
-*Rin2	in2	vcm2	100
-
-*vcm1	vcm1	0	dc	.7
-*vcm2	vcm2	0	dc	.7
-*vin	in1	in2	sin(0	10m	1K)
-
+Vopamp LPO LPI dc 0
 *-----------------------------------------------------------------
 * DUT
 *-----------------------------------------------------------------
-XDUT VDD VSS rst CNR_GR02
+XDUT VDD_1V8 VSS rst VO LPO LPI CNR_GR02
 
 *----------------------------------------------------------------
 * MEASURES
@@ -48,15 +39,8 @@ XDUT VDD VSS rst CNR_GR02
 *----------------------------------------------------------------
 * PROBE
 *----------------------------------------------------------------
-
-#ifdef Debug
 .save all
-#else
-.save v(VDD) v(VSS) v(xdut.VO) v(xdut.VBJT1) v(xdut.VBJT2) v(xdut.VBJT3) v(xdut.VRO) v(xdut.VRO0) i(vdd) v(xdut.Vb) v(xdut.Vn1) v(xdut.Vn2) v(rst) v(xdut.Vop) v(xdut.Vn20) v(dt)
-
-*.measure tran tdiff TRIG V(rst) VAL=0.5 FALL=1 TARG V(xdut.Vop) VAL=.5 FALL=1
-
-#endif
+.save i(LPI) v(LPI) v(LPO) v(LPO)
 
 *----------------------------------------------------------------
 * NGSPICE control
@@ -65,30 +49,21 @@ XDUT VDD VSS rst CNR_GR02
 set num_threads=8
 set color0=white
 set color1=black
+set file = "tdiff.txt"
 unset askquit
 
+* Temperature sweep with rst triggering
 optran 0 0 0 100n 20u 0
-
-
-foreach vtemp -40 -30 -20 20 30 40 100 110 120
+foreach vtemp -40 -30 -20 -10 0 11 20 30 40 50 60 70 80 90 100 110 120 
   option temp=$vtemp
-  tran 10n 15u
+  tran 100n 300u
+  meas tran tdiff_$vtemp TRIG V(rst) VAL=0.5 FALL=1 TARG V(xdut.vop) VAL=.5 FALL=1 >> $file
   write {cicname}_$vtemp
 end
-
-*tran 5n 55u
-
-let vro0= v(xdut.vro0)
-let vref=v(xdut.VRO0)-v(xdut.VBJT2)
-let vd= v(xdut.VBJT1)-v(xdut.VRO0)
-let W_vdd=i(vdd)*1.8 
-let vo=v(xdut.VO)
-let vb=v(xdut.Vb)
 
 write
 quit
 #endif
 
 .endc
-
 .end

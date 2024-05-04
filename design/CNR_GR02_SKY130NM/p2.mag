@@ -1,0 +1,30 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1713555407
+<< nwell >>
+rect 252 1990 822 2162
+<< locali >>
+rect 234 2784 1328 2830
+rect 288 2572 322 2784
+rect 750 2572 784 2784
+rect 301 2520 412 2554
+rect 647 2296 681 2324
+rect 588 2262 681 2296
+rect 288 1881 322 2244
+rect 288 1847 561 1881
+rect 647 891 681 2262
+rect 1304 1036 1452 1786
+use M10  M10_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
+timestamp 1713518505
+transform 0 -1 1194 -1 0 1862
+box -236 -684 236 684
+use M21  M21_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
+timestamp 1713523951
+transform 0 1 536 1 0 2408
+box -296 -284 296 284
+use p1  p1_0
+timestamp 1713555407
+transform 1 0 946 0 1 838
+box -946 -838 884 370
+<< end >>

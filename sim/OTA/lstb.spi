@@ -28,14 +28,11 @@ VDD_1V8  VDD_1V8  0  dc {AVDD}
 VIP  VIP 0 dc 1.2
 *VIN  VO VIN dc 0 
 
-*vlp1 LPI LPO dc 0
 *-----------------------------------------------------------------
 * DUT
 *-----------------------------------------------------------------
 .include ../xdut.spi
 *.include ../load.spi
-
-
 
 .include ../../../../cpdk/ngspice/tian_subckt.lib
 X999 LPO LPI loopgainprobe
@@ -50,7 +47,6 @@ X999 LPO LPI loopgainprobe
 
 .save V(X999.x) I(v.X999.Vi)
 .save v(LPO) v(LPI)
-*.save v(AVDD)
 .save i(VSS)
 .save i(VDD_1V8)
 *----------------------------------------------------------------
@@ -70,12 +66,12 @@ write {cicname}_op.raw
 * LSTB analysis
 *----------------------------------------------------------------
 * Set voltage AC to 1
-ac dec 50 1 0.1G
+ac dec 50 1 100G
 
 * Set Current to 1
 alter i.X999.Ii acmag=1
 alter v.X999.Vi acmag=0
-ac dec 50 1 0.1G
+ac dec 50 1 100G
 
 let lg_mag = db(tian_loop())
 let lg_phase = 180*cph(tian_loop())/pi
