@@ -9,12 +9,14 @@
 # drc: Run design rule checks on ../design/<LIB>/<CELL>.mag
 # -----------------------------------------------------------
 
-#PREFIX=
+PREFIX=
 LIB=CNR_GR02_SKY130NM
 CELL=CNR_GR02
 
+SVGLIBS= ${LIB}
+
 #- Provide cells you want to check for the lvsall drcall commands
-CELLS=CNR_GR02
+CELLS = CNR_GR02
 
 
 include ../tech/make/core.make
