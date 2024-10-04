@@ -1,7 +1,12 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1714175367
+timestamp 1715274076
+<< error_p >>
+rect -3762 -2376 -3731 -2272
+rect -5023 -2431 -4961 -2403
+rect -5013 -2484 -4966 -2437
+rect -3524 -2791 -3477 -2744
 << locali >>
 rect -6110 910 -4580 1050
 rect -6110 830 -5920 910
@@ -197,53 +202,53 @@ rect -4917 -3212 -4291 -3171
 rect -4250 -3212 -4238 -3171
 rect -4917 -3218 -4238 -3212
 use CNRATR_NCH_4C2F0  CNRATR_NCH_4C2F0_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
-timestamp 1713296683
+timestamp 1712008800
 transform 1 0 -4116 0 1 224
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_NCH_4C2F0  CNRATR_NCH_4C2F0_1
-timestamp 1713296683
+timestamp 1712008800
 transform 1 0 -4116 0 1 -366
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_NCH_4C2F0  CNRATR_NCH_4C2F0_2
-timestamp 1713296683
+timestamp 1712008800
 transform 1 0 -4116 0 1 -3066
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_NCH_4C2F0  CNRATR_NCH_4C2F0_3
-timestamp 1713296683
+timestamp 1712008800
 transform 1 0 -4116 0 1 -956
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_NCH_4C2F0  CNRATR_NCH_4C2F0_4
-timestamp 1713296683
+timestamp 1712008800
 transform 1 0 -4116 0 1 -2476
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_NCH_4C2F0  CNRATR_NCH_4C2F0_5
-timestamp 1713296683
+timestamp 1712008800
 transform 1 0 -4116 0 1 -1546
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_PCH_4C2F0  CNRATR_PCH_4C2F0_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
-timestamp 1695852000
+timestamp 1712008800
 transform 1 0 -6016 0 1 224
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_PCH_4C2F0  CNRATR_PCH_4C2F0_1
-timestamp 1695852000
+timestamp 1712008800
 transform 1 0 -6016 0 1 -366
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_PCH_4C2F0  CNRATR_PCH_4C2F0_2
-timestamp 1695852000
+timestamp 1712008800
 transform 1 0 -6016 0 1 -956
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_PCH_4C2F0  CNRATR_PCH_4C2F0_3
-timestamp 1695852000
+timestamp 1712008800
 transform 1 0 -6016 0 1 -1546
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_PCH_4C2F0  CNRATR_PCH_4C2F0_4
-timestamp 1695852000
+timestamp 1712008800
 transform 1 0 -6016 0 1 -2136
-box -184 -124 1528 728
+box -184 -124 1528 718
 use CNRATR_PCH_4C2F0  CNRATR_PCH_4C2F0_5
-timestamp 1695852000
+timestamp 1712008800
 transform 1 0 -6016 0 1 -2726
-box -184 -124 1528 728
+box -184 -124 1528 718
 << labels >>
 flabel locali -5670 930 -5000 1030 0 FreeSans 400 0 0 0 VDD
 port 2 nsew

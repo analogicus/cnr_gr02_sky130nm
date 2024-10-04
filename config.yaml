@@ -1,0 +1,16 @@
+
+#- Carsten's PDK. Borders, symbols, loop stability
+cpdk:
+  remote: git@github.com:wulffern/cpdk.git
+  revision: main
+
+#- Analog transitor library (sky130B, sch/lay)
+cnr_atr_sky130nm:
+  remote: git@github.com:wulffern/cnr_atr_sky130nm.git
+  revision: main
+
+
+#- Technology used by sun/rply/cnr projects
+tech_sky130B:
+  remote: git@github.com:wulffern/tech_sky130B.git
+  revision: main

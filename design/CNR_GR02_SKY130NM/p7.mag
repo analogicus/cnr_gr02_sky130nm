@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1713561060
+timestamp 1715274076
 << nwell >>
 rect 249 2698 5025 2704
 rect 249 1626 5026 2698
@@ -66,7 +66,7 @@ rect 2426 976 2500 1407
 rect 2408 906 2500 976
 rect 2426 879 2500 906
 rect 654 -976 6834 -546
-use M9  M9_0 ../design/CNR_GR02_SKY130NM
+use M9  M9_0
 timestamp 1713524830
 transform 0 1 2600 -1 0 2468
 box -236 -584 236 584
@@ -74,7 +74,7 @@ use M9  M9_1
 timestamp 1713524830
 transform 0 1 3870 -1 0 2464
 box -236 -584 236 584
-use M10  M10_0 ../design/CNR_GR02_SKY130NM
+use M10  M10_0
 timestamp 1713518505
 transform 0 1 2580 -1 0 1864
 box -236 -684 236 684
@@ -86,12 +86,12 @@ use p4  p4_0
 timestamp 1713555407
 transform 1 0 0 0 1 0
 box 0 0 1980 2830
-use Q1  Q1_0 ../design/CNR_GR02_SKY130NM
-timestamp 1713553704
+use Q1  Q1_0
+timestamp 1715274076
 transform 1 0 -12 0 1 -2016
 box 0 600 7780 1940
-use Q2  Q2_0 ../design/CNR_GR02_SKY130NM
-timestamp 1713553704
+use Q2  Q2_0
+timestamp 1715274076
 transform 1 0 -6028 0 1 -586
 box 7780 600 9120 1940
 << end >>
