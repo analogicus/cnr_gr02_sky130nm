@@ -16,7 +16,7 @@ rect 1809 1947 1843 2251
 rect 1250 1940 1366 2382
 rect 1799 1792 1851 2438
 rect 1688 1740 1851 1792
-use M9  M9_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
+use M9  M9_0 
 timestamp 1713524830
 transform 0 1 1396 -1 0 2462
 box -236 -584 236 584

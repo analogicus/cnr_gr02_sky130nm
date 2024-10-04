@@ -59,11 +59,11 @@ rect 5709 3005 12335 3045
 rect 5603 2999 5709 3005
 rect 9539 2939 12335 3005
 rect 12441 2939 12447 3045
-use COMP  COMP_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
+use COMP  COMP_0 
 timestamp 1713519326
 transform 0 1 15962 -1 0 -2716
 box -6200 -3190 -2588 1050
-use M6  M6_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
+use M6  M6_0 
 timestamp 1713519460
 transform 0 1 11390 -1 0 1777
 box -276 -329 276 329

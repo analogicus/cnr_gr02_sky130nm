@@ -19,7 +19,7 @@ rect 12304 1512 12338 1632
 rect 11091 1258 12677 1512
 << metal1 >>
 rect 11570 1750 11872 1800
-use M6  M6_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
+use M6  M6_0 
 timestamp 1713519460
 transform 0 1 11390 -1 0 1777
 box -276 -329 276 329

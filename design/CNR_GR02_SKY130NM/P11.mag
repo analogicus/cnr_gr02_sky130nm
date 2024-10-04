@@ -57,11 +57,11 @@ rect 5246 803 5360 1674
 rect 5757 1518 5827 2036
 rect 5757 1447 8359 1518
 rect 8288 781 8359 1447
-use M14  M14_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
+use M14  M14_0 
 timestamp 1713520534
 transform 0 1 5443 -1 0 3889
 box -305 -919 305 1002
-use M16  M16_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
+use M16  M16_0 
 timestamp 1713520667
 transform 0 1 7512 -1 0 2582
 box -996 -1684 996 1684
@@ -69,7 +69,7 @@ use p7  p7_0
 timestamp 1713528272
 transform 1 0 12 0 1 1416
 box -12 -1416 7768 2830
-use Q2  Q2_0 ~/aicex/ip/cnr_gr02_sky130nm/design/CNR_ATR_SKY130NM
+use Q2  Q2_0 
 timestamp 1713441746
 transform 1 0 2 0 1 -600
 box 7780 600 9120 1940
